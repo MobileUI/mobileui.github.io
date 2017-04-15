@@ -12,7 +12,7 @@ a {
   text-decoration: none;
 }
 .top {
-  background-color: #121212;
+  background-color: #24292e;
   padding: 0 20px;
   margin: 0 auto;
   display: flex;
@@ -68,11 +68,17 @@ a {
   overflow: auto;
   padding: 50px;
 }
-.menu h1 {
+.menu h1,
+.content h2 {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 10px;
   margin-top: 10px;
+  color: #24292e;
+  text-transform: uppercase;
+}
+.content h2 {
+  padding-top: 50px;
 }
 .menu h1:first-child {
   margin-top: 0;
@@ -108,12 +114,6 @@ a {
   line-height: 30px;
   padding-bottom: 15px;
 }
-.content  h2 {
-  font-size: 22px;
-  font-weight: 700;
-  padding-top: 50px;
-  margin-bottom: 30px;
-}
 pre, .CodeMirror {
   padding: 20px;
   background-color: #ebebeb;
@@ -125,4 +125,49 @@ pre, .CodeMirror {
 .CodeMirror-scroll {
   overflow-y: hidden !important;
   overflow-x: auto !important;
+}
+.color-group {
+  float: left;
+  width: 50%;
+  font-family: arial;
+  font-size: 12px;
+  padding: 10px;
+}
+.color-group .color {
+  float: left;
+  padding: 12px;
+  color: #fff;
+  width: 50%;
+}
+.color-group .color.main-color {
+  width: 100%;
+}
+.color-group .color.dark {
+  color: rgba(0, 0, 0, 0.8);
+}
+.color-group .color span {
+  display: block;
+  font-size: 11px;
+  font-weight: 300;
+}
+.color-palettes {
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 1300px) {
+    .color-group {
+      width: 33.33%;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .color-group {
+      width: 25%;
+    }
+}
+@media only screen and (min-width: 1900px) {
+    .color-group {
+      width: 20%;
+    }
 }
