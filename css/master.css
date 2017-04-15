@@ -1,0 +1,128 @@
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+* {
+  box-sizing: border-box;
+}
+.font-dosis {
+  font-family: 'Dosis', sans-serif;
+}
+.font-raleway {
+  font-family: 'Raleway', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.top {
+  background-color: #121212;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 80px;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.top img {
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 0;
+  max-width: 150px;
+}
+.top ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+}
+.top li {
+  white-space: nowrap;
+  margin: 0 28px 0 0;
+  padding: 0;
+  position: relative;
+}
+.top a {
+  color: rgba(255, 255, 255, 0.7);
+}
+.top a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+.menu {
+  position: absolute;
+  width: 280px;
+  overflow: auto;
+  padding: 50px;
+}
+.menu h1 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.menu h1:first-child {
+  margin-top: 0;
+}
+.menu a {
+  color: rgba(0, 0, 0, 0.8);
+}
+.menu li {
+  padding: 10px;
+}
+.menu li:hover {
+  background-color: #7fc7af;
+}
+.menu::-webkit-scrollbar {
+    display: none;
+}
+.menu a:target li{
+  border-left: 4px solid #7fc7af;
+}
+.menu.hasScrolled {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+}
+.content {
+  max-width: 100%;
+  margin-left: 320px;
+  font-size: 18px;
+  padding-right: 50px
+}
+.content p {
+  line-height: 30px;
+  padding-bottom: 15px;
+}
+.content  h2 {
+  font-size: 22px;
+  font-weight: 700;
+  padding-top: 50px;
+  margin-bottom: 30px;
+}
+pre, .CodeMirror {
+  padding: 20px;
+  background-color: #ebebeb;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.CodeMirror-scroll {
+  overflow-y: hidden !important;
+  overflow-x: auto !important;
+}
