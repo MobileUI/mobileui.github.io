@@ -11,6 +11,34 @@ a {
   color: #4F8EF7;
   text-decoration: none;
 }
+.dependency {
+  color: rgba(0, 0, 0, 0.4);
+  float: right;
+  font-size: 14px;
+}
+.dependency strong {
+  font-weight: 700;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 320px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
 .top {
   background-color: #24292e;
   padding: 0 20px;
@@ -89,7 +117,7 @@ a {
 .menu li {
   padding: 10px;
 }
-.menu li:hover {
+.menu li:hover, .menu a.active li {
   background-color: #7fc7af;
 }
 .menu::-webkit-scrollbar {
@@ -113,6 +141,7 @@ a {
 .content p {
   line-height: 30px;
   padding-bottom: 15px;
+  font-size: 16px;
 }
 pre, .CodeMirror {
   padding: 20px;
@@ -161,10 +190,16 @@ pre, .CodeMirror {
 .result {
   font-family: 'Roboto', sans-serif;
   max-width: 400px;
+  position: relative;
 }
 .result h1, .result h2 {
   padding: 10px !important;
   margin: 0 !important;
+}
+.result p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0;
 }
 .header {
   position: inherit;
