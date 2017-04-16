@@ -29,8 +29,13 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway:400,700|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+    <link rel="stylesheet" href="/mobileui/base/reset.css">
+    <link rel="stylesheet" href="/mobileui/base/mobileui.css">
+    <link rel="stylesheet" href="/mobileui/base/colors.css">
+    <link rel="stylesheet" href="/mobileui/base/icons.css">
+    <link rel="stylesheet" href="/mobileui/header/style.css">
     <link rel="stylesheet" href="/css/master.css">
   </head>
   <body>
@@ -60,6 +65,7 @@
       <h1>Components</h1>
       <ul>
         <a href="#colors"><li>Colors</li></a>
+        <a href="#icons"><li>Icons</li></a>
         <a href="#header"><li>Header</li></a>
         <a href="#button"><li>Button</li></a>
         <a href="#switch"><li>Switch</li></a>
@@ -98,7 +104,7 @@
     </div>
 
     <div class="content font-raleway">
-      <h2 id="getting-started">Getting started</h2>
+      <h2 class="title-doc" id="getting-started">Getting started</h2>
       <p>
         MobileUI is a simple and eisy module NPM to install UI Components for web mobile apps using HTML, CSS and JavaScript.
       </p>
@@ -113,13 +119,16 @@
       </p>
       <pre>npm install mobileui -g</pre>
 
-      <h2 id="colors">colors</h2>
-      <p>Mockapp use the sugestions material design colors because material takes cues from contemporary architecture, road signs, pavement marking tape, and athletic courts. Color should be unexpected and vibrant.</p>
+      <h2 class="title-doc" id="colors">colors</h2>
+      <p>MobileUI use the sugestions material design colors because material takes cues from contemporary architecture, road signs, pavement marking tape, and athletic courts. Color should be unexpected and vibrant.</p>
       <p>This color palette comprises primary and accent colors that can be used for illustration or to develop your brand colors. They’ve been designed to work harmoniously with each other. The color palette starts with primary colors and fills in the spectrum to create a complete and usable palette for Android, Web, and iOS.</p>
       <p>Themes enable consistent app styling through surface shades, shadow depth, and ink opacity.</p>
       <p>Just add the class in your component to use the color, example:  </p>
-      <textarea class="bind-code" mode="text/html"><h2 class="purple">Title example here</h2></textarea>
-      <p>Colors MobileUI:</p>
+      <textarea class="bind-code" mode="text/html">
+<h2 class="purple">Title example here</h2>
+<h2 class="red-100 text-red-900">Title example here with color text change</h2></textarea>
+
+      <h3 class="sub-title-doc">Colors MobileUI:</h3>
       <div class="color-palettes">
         <section class="color-group">
           <ul>
@@ -432,30 +441,79 @@
         </section>
       </div>
 
-      <h2 id="header">Header</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h2 class="title-doc" id="icons">Icons</h2>
+      <p>
+        MobileUI also comes with its own free and open-sourced icon font, <a href="http://ionicons.com/" target="_blank">Ionicons</a>, with over 500 icons to choose from.
+      </p>
+      <p>
+        Simply add <code>icon</code> and the Ionicon classname for the icon to show, which can be easily looked up on the <a href="http://ionicons.com/" target="_blank">Ionicons</a> homepage. You can change the color add class colors for text.
+      </p>
+      <textarea class="bind-code" mode="text/html">
+<i class="icon ion-navicon"></i>
+<i class="icon ion-heart text-red"></i>
+<i class="icon ion-refresh"></i>
+<i class="icon ion-chatbox-working"></i>
+<i class="icon ion-wifi text-green"></i></textarea>
+
+      <h2 class="title-doc" id="header">Header</h2>
+      <p>
+        Headers are fixed regions at the top of a screen that can contain a title label, and left/right buttons for navigation or to carry out various actions.
+      </p>
 
       <textarea class="bind-code" mode="text/html">
-<label class="switch">
-  <input type="checkbox" class="switch__input">
-  <div class="switch__toggle">
-    <div class="switch__handle"></div>
+<div class="header purple">
+  <div class="title">
+     Application title
   </div>
-</label>
-<label class="switch">
-  <input type="checkbox" class="switch__input" checked>
-  <div class="switch__toggle">
-    <div class="switch__handle"></div>
+</div></textarea>
+
+    <p>
+      You can put the title in center or right add class <code>align-center</code> or <code>align-right</code>.
+    </p>
+    <textarea class="bind-code" mode="text/html">
+<div class="header red">
+<div class="title align-center">
+   Application title in center
+</div>
+</div></textarea>
+
+  <p>
+    For put buttons in left and right you need create a div with class <code>left</code> or <code>right</code>.
+  </p>
+  <textarea class="bind-code" mode="text/html">
+    <div class="header blue">
+      <div class="left">
+        <button class="icon ion-navicon-round"></button>
+      </div>
+      <div class="title">
+         Application title
+      </div>
+      <div class="right">
+        <button class="icon ion-search"></button>
+        <button class="icon ion-android-more-vertical"></button>
+      </div>
+    </div></textarea>
+    <p>
+      If you need the header transaparent just add text color class.
+    </p>
+    <textarea class="bind-code" mode="text/html" header-absolute="true">
+      <div class="header text-white">
+        <div class="left">
+          <button class="icon ion-navicon-round"></button>
+        </div>
+        <div class="title">
+           Application title
+        </div>
+        <div class="right">
+          <button class="icon ion-search"></button>
+          <button class="icon ion-android-more-vertical"></button>
+        </div>
+      </div>
+      <img src="/img/city.jpg" /></textarea>
+
+
+
   </div>
-</label>
-<label class="switch">
-  <input type="checkbox" class="switch__input" disabled>
-  <div class="switch__toggle">
-    <div class="switch__handle"></div>
-  </div>
-</label></textarea>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
