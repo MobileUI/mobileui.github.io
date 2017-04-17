@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="/mobileui/base/icons.css">
     <link rel="stylesheet" href="/mobileui/header/style.css">
     <link rel="stylesheet" href="/mobileui/button/style.css">
+    <link rel="stylesheet" href="/mobileui/list/style.css">
     <link rel="stylesheet" href="/css/master.css">
   </head>
   <body>
@@ -69,6 +70,8 @@
         <a href="#icons"><li>Icons</li></a>
         <a href="#header"><li>Header</li></a>
         <a href="#button"><li>Button</li></a>
+        <a href="#list"><li>List</li></a>
+        <a href="#card"><li>Card</li></a>
       </ul>
     </div>
 
@@ -98,8 +101,8 @@
       <pre>mobileui install base</pre>
       <p>And just add the class in your component to use the color, example:  </p>
       <textarea class="bind-code" mode="text/html">
-<h2 class="purple">Title example here</h2>
-<h2 class="red-100 text-red-900">Title example here with color text change</h2></textarea>
+<h2 class="purple padding">Title example here</h2>
+<h2 class="red-100 text-red-900 padding">Title example here with color text change</h2></textarea>
 
       <h3 class="sub-title-doc">Colors MobileUI:</h3>
       <div class="color-palettes">
@@ -546,8 +549,10 @@
 
     <h2 class="title-doc" id="button">Button</h2>
     <p>
-      You can use <a href="#colors">colors theme</a> and <a href="#icons">icons</a> in button.
+      You can use <a href="#colors">colors theme</a> and <a href="#icons">icons</a> in button. If you need use base mode just add theme color name,
+      you can alter border color using class <code>border-[COLOR]</code>, alter text color using class <code>text-[COLOR]</code> and add radius border using class <code>radius</code>.
     </p>
+    <p>For use icon in button you need add class <code>icon-text</code> and you can use diferents size, see the examples below.</p>
     <p>
       For use this components you need install with command:
     </p>
@@ -561,6 +566,11 @@
 <textarea class="bind-code" mode="text/html">
 <button class="green">Login with email</button>
 <button class="border-green text-green">Create a new user</button>
+<p>Customize as you wish:</p>
+<button class="brown border-brown-800 text-brown-50 radius icon-text">
+  <i class="icon ion-ios-settings-strong"></i>
+  Configure your workspace
+</button>
 <p>Social login:</p>
 <button class="blue icon-text">
   <i class="icon ion-social-facebook"></i>
@@ -574,10 +584,122 @@
 <button class="cyan">Edit</button>
 <button class="purple small">View</button>
 <p>Full size:</p>
-<button class="pink full">View more detail</button></textarea>
+<button class="pink full">View more detail</button>
+<p>Group buttons:</p>
+<div class="buttons-group full">
+  <button class="teal border-teal-700 radius-left">Left</button>
+  <button class="teal border-teal-700">Middle</button>
+  <button class="teal-700 border-teal-700">Middle</button>
+  <button class="teal border-teal-700 radius-right">Right</button>
+</div></textarea>
+
+<h2 class="title-doc" id="list">List</h2>
+<p>
+  For use this components you need install with command:
+</p>
+<div class="dependency tooltip">
+  <strong>Dependency:</strong> <code>base</code>.
+  <span class="tooltiptext">The dependencies will be installed together with this module</span>
+</div>
+<pre>mobileui install list</pre>
 
 
+<textarea class="bind-code" mode="text/html">
+<div class="list">
+  <div class="item">
+    <h2>Jeanette Fletcher</h2>
+    <p class="text-grey-500">jeanette.fletcher15@example.com</p>
+  </div>
+  <div class="item">
+    <h2>Chad Black</h2>
+    <p class="text-grey-500">chad.black48@example.com</p>
+  </div>
+  <div class="item">
+    <h2>Carter hudson</h2>
+    <p class="text-grey-500">carter.hudson17@example.com</p>
+  </div>
+  <div class="item">
+    <h2>Vanessa brown</h2>
+    <p class="text-grey-500">vanessa.brown96@example.com</p>
+  </div>
+</div></textarea>
+    <p>You can combinate with others components and class.</p>
+<textarea class="bind-code" mode="text/html" replace="body,div">
+<body class="padding grey-100">
+  <h1 class="bold">List of contacts</h1>
+  <p>List of your contacts save in this deivce.</p>
+  <div class="list radius white">
+    <div class="item">
+      <div class="left">
+        <img class="avatar" src="/img/80.jpg">
+      </div>
+      <h2>Jeanette Fletcher</h2>
+      <p class="text-grey-500">jeanette.fletcher15@example.com</p>
+      <div class="right">
+          <i class="icon ion-ios-arrow-right"></i>
+      </div>
+    </div>
+    <div class="item">
+      <h2>Chad Black</h2>
+      <div class="right">
+        <button class="blue small radius">Edit</button>
+      </div>
+    </div>
+    <div class="item">
+      <img class="avatar left" src="/img/33.jpg">
+      <i class="right align-top icon ion-ios-arrow-right"></i>
+      <h2>Carter hudson</h2>
+      <p class="text-grey-500">Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+</body>
+</textarea>
 
+    <h2 class="title-doc" id="card">Card</h2>
+    <p>Card is a popular component in apps mobile. In MobileUI you can create a card using base classes.</p>
+    <p>
+      If you have installed any component, the base classes are already installed. Otherwise run the command:
+    </p>
+    <pre>mobileui install base</pre>
+<textarea class="bind-code" mode="text/html">
+<div class="padding border-grey-400 shadow radius">
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+</div></textarea>
+    <p>You can combinate card style and <a href="#list">list</a> component, just add class <code>shadow</code>.</p>
+<textarea class="bind-code" mode="text/html" replace="body,div">
+<body class="padding grey-100">
+  <div class="padding border-grey-400 shadow radius white">
+    <button class="small icon ion-grid white"></button>
+    <button class="small icon ion-navicon-round white text-grey-400"></button>
+    <button class="small icon ion-ios-location white text-grey-400"></button>
+    <div class="right">
+      <button class="small white text-grey-400">Last updated</button>
+    </div>
+  </div>
+  <div class="space"></div>
+  <div class="list shadow radius white">
+    <div class="item">
+      <div class="left">
+        <img class="avatar" src="/img/80.jpg">
+      </div>
+      <h2>Jeanette Fletcher</h2>
+      <p>jeanette.fletcher15@example.com</p>
+      <p class="text-grey-500 text-small">
+        <i class="icon ion-ios-location"></i> Brazil - Maringá-PR
+      </p>
+    </div>
+    <div class="item full">
+      <img src="/img/maringa.jpg">
+    </div>
+    <div class="item text-grey-600">
+      Catedral is a beautiful built in Maringá
+    </div>
+  </div>
+</body></textarea>
   </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

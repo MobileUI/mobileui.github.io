@@ -192,14 +192,11 @@ pre, .CodeMirror {
   max-width: 400px;
   position: relative;
 }
-.result h1, .result h2 {
-  padding: 10px !important;
-  margin: 0 !important;
-}
 .result p {
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 0;
+  line-height: 20px;
 }
 .header {
   position: inherit;
