@@ -4,6 +4,8 @@ $(document).ready(function(){
     var mode = $(block).attr('mode')
     var absolute = $(block).attr('header-absolute')
     var replace = $(block).attr('replace')
+    var hidden = $(block).attr('hidden')
+    var theme = 'default'
     if(replace) {
       code = code.replace(new RegExp(replace.split(',')[0], 'g'), replace.split(',')[1]);
     }
@@ -13,6 +15,7 @@ $(document).ready(function(){
     var editor = CodeMirror.fromTextArea(block, {
       lineNumbers: false,
       mode: mode,
+      theme: theme,
       readOnly: true
     });
     if(absolute) {

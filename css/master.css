@@ -143,6 +143,9 @@ a {
   padding-bottom: 15px;
   font-size: 16px;
 }
+.content p.text-small {
+  font-size: 14px;
+}
 pre, .CodeMirror {
   padding: 20px;
   background-color: #ebebeb;
@@ -206,6 +209,9 @@ pre, .CodeMirror {
   max-width: 400px;
 }
 textarea.bind-code {
+  display: none;
+}
+.cm-s-hidden-code {
   display: none;
 }
 @media only screen and (min-width: 1300px) {
