@@ -195,6 +195,9 @@ pre, .CodeMirror {
   max-width: 400px;
   position: relative;
 }
+.result.height-change > div{
+  height: 100%;
+}
 .result p {
   margin-top: 5px;
   margin-bottom: 5px;

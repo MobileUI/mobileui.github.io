@@ -5,6 +5,7 @@ $(document).ready(function(){
     var absolute = $(block).attr('header-absolute')
     var replace = $(block).attr('replace')
     var hidden = $(block).attr('hidden')
+    var heightPreview = $(block).attr('height-preview')
     var theme = 'default'
     if(replace) {
       code = code.replace(new RegExp(replace.split(',')[0], 'g'), replace.split(',')[1]);
@@ -19,9 +20,15 @@ $(document).ready(function(){
       readOnly: true
     });
     if(absolute) {
-      code = code.replace('"header', '"header header-absolute')
+      code = code.replace(new RegExp('"header', 'g'), '"header header-absolute')
     }
-    $(block).after('<div class="result">'+code+'<div class="cls"></div></div>')
+    var resultStyle = ''
+    var resultClass = 'result'
+    if(heightPreview) {
+      resultStyle += 'height:'+heightPreview
+      resultClass += ' height-change'
+    }
+    $(block).after('<div class="'+resultClass+'" style="'+resultStyle+'">'+code+'<div class="cls"></div></div>')
   });
 
   var $document = $(document);
@@ -36,13 +43,7 @@ $(document).ready(function(){
     }
   }
   var checkHashSection = function(){
-    $('h2[id]').each(function(i,e){
-        if ($(e).offset().top < window.pageYOffset + 10 && $(e).offset().top + $(e).height() > window.pageYOffset + 10) {
-            window.location.hash = $(e).attr('id');
-            $('.menu a').removeClass('active');
-            $('.menu a[href="#'+$(e).attr('id')+'"]').addClass('active');
-        }
-    });
+
   }
 
   checkScroll()
