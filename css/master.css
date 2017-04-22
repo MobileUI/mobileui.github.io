@@ -4,6 +4,9 @@
 .font-raleway {
   font-family: 'Raleway', sans-serif;
 }
+ol, ul {
+    list-style: none;
+}
 a {
   opacity: 0.8;
   transition: .1s ease-in-out;
@@ -95,6 +98,9 @@ a {
   width: 280px;
   overflow: auto;
   padding: 50px;
+}
+.menu li {
+  font-size: 16px;
 }
 .menu h1,
 .content h2.title-doc {

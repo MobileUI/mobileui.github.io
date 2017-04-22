@@ -542,6 +542,26 @@
   </div>
   <p>Content here.</p>
 </body></textarea>
+  <p>You can add group of buttons in header.</p>
+<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div">
+<body class="has-header has-sub-header grey-50 padding">
+<div class="header indigo">
+  <div class="left">
+    <button class="icon ion-android-arrow-back"></button>
+  </div>
+  <div class="title">
+     Contacts
+  </div>
+  </div>
+  <div class="header sub indigo-400">
+    <div class="buttons-group full small">
+      <button class="indigo-400 border-white radius-left">Left</button>
+      <button class="indigo-400 border-white">Middle</button>
+      <button class="indigo-400 border-white radius-right">Right</button>
+    </div>
+</div>
+<p>Content here.</p>
+</body></textarea>
   <p>
     You can create a header in bottom of screen, just add class <code>bottom</code>.
     In anothers UIKIT the name of this component is footer, becase footers are regions at
@@ -609,6 +629,12 @@
   <button class="teal border-teal-700">Middle</button>
   <button class="teal-700 border-teal-700">Middle</button>
   <button class="teal border-teal-700 radius-right">Right</button>
+</div>
+<p>And diferent size in group:</p>
+<div class="buttons-group full small">
+  <button class="red border-red-600 radius-left">Left</button>
+  <button class="red border-red-600">Middle</button>
+  <button class="red border-red-600 radius-right">Right</button>
 </div></textarea>
     <p>Another type button used in Android is a Tap, for this you can put <code>circle</code> class in button. You can controller what position button.</p>
 <textarea class="bind-code" mode="text/html" height-preview="400px" replace="body,div">
@@ -617,8 +643,7 @@
   <button class="red circle icon ion-headphone shadow"></button>
   <button class="green circle icon ion-chatbox shadow float-bottom-right"></button>
   <button class="blue circle icon ion-ios-gear shadow float-bottom-left"></button>
-</body>
-</textarea>
+</body></textarea>
     
     <h2 class="title-doc" id="list">List</h2>
     <p>
