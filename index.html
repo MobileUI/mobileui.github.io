@@ -31,14 +31,7 @@
     <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway:400,700|Roboto:300,400,900," rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
-    <link rel="stylesheet" href="/mobileui/base/reset.css">
-    <link rel="stylesheet" href="/mobileui/base/mobileui.css">
-    <link rel="stylesheet" href="/mobileui/base/colors.css">
-    <link rel="stylesheet" href="/mobileui/base/icons.css">
-    <link rel="stylesheet" href="/mobileui/header/style.css">
-    <link rel="stylesheet" href="/mobileui/button/style.css">
-    <link rel="stylesheet" href="/mobileui/list/style.css">
-    <link rel="stylesheet" href="/mobileui/cover/style.css">
+    <link rel="stylesheet" href="/mobileui/imports.css">
     <link rel="stylesheet" href="/css/master.css">
   </head>
   <body>
@@ -838,8 +831,32 @@
       </small>
     </div>
   </div>
-</div>
-</textarea>
+</div></textarea>
+<p>You can add class <code>mark</code> for change color border.</p>
+<textarea class="bind-code" mode="text/html" header-absolute="true" hidden="true">
+<div class="list padding grey-100">
+  <div class="item white mark border-green margin-button shadow">
+    <h2><strong>Jeanette Fletcher</strong></h2>
+    <p class="text-grey">+55 7979 325 655</p>
+    <p class="text-green">Last activity on 5 minutes ago.</p>
+  </div>
+  <div class="item white mark border-light-blue margin-button shadow">
+    <h2><strong>Jerald Dustin</strong></h2>
+    <p class="text-grey">+55 8779 325 655</p>
+    <p class="text-light-blue">Last activity on 15 minutes ago.</p>
+  </div>
+  <div class="item white mark border-purple margin-button shadow">
+    <h2><strong>Shawn Todd</strong></h2>
+    <p class="text-grey">+55 7964 325 655</p>
+    <p class="text-purple">Last activity on 5 hours ago.</p>
+  </div>
+  <div class="item white mark border-orange margin-button shadow">
+    <h2><strong>Jaden Taylor</strong></h2>
+    <p class="text-grey">+55 7964 325 655</p>
+    <p class="text-orange">Last activity on 1 day ago.</p>
+  </div>
+</div></textarea>
+
     
     <h2 class="title-doc" id="card">Card</h2>
     <p>Card is a popular component in apps mobile. In MobileUI you can create a card using base classes.</p>
@@ -847,13 +864,20 @@
       If you have installed any component, the base classes are already installed. Otherwise run the command:
     </p>
     <pre>mobileui install base</pre>
-    <textarea class="bind-code" mode="text/html">
-    <div class="padding border-grey-400 shadow radius">
-    <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-    </div></textarea>
+<textarea class="bind-code" mode="text/html">
+<div class="padding border-grey-400 shadow radius">
+  <p>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+</div>
+<div class="space"></div>
+<div class="padding border-purple shadow radius mark">
+  <p>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+</div></textarea>
     <p>You can combinate card style and <a href="#list">list</a> component, just add class <code>shadow</code>.</p>
     <textarea class="bind-code" mode="text/html" replace="body,div">
     <body class="padding grey-100">
@@ -1102,23 +1126,24 @@
     <pre>mobileui install menu</pre>
     <p>
       Your menu need have <code>id</code> and for you open menu, just call function <code>openMenu('ID_YOUR_MENU')</code>, for close menu just call function <code>closeMenu('ID_YOU_MENU')</code>.
+      By default the menu is created in the left, but you can add class <code>menu-right</code> for create menu in right position.
     </p>
     <p>See example:</p>
-<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div" id-result="resultmenu1" height-preview="400px" border="true">
+<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div|grey-200,grey-200 body" height-preview="400px" border="true" multiplatform="true">
 <body class="padding grey-200">
-  <div class="menu white" id="myFirstMenu">
-    <div class="list without-border">
-      <a onclick="closeMenu('myFirstMenu')" class="item">
-        <h1>Close menu</h1>
-      </a>
-    </div>
+  <div class="menu menu purple" id="myFirstMenu">
+    <button class="purple-100 full" onclick="closeMenu('myFirstMenu')">Close menu </button>
   </div>
-  <button class="blue" onclick="openMenu('myFirstMenu')">Open menu</button>
+  <div class="menu menu-right green" id="mySecondMenu">
+    <button class="green-100 full" onclick="closeMenu('mySecondMenu')">Close menu</button>
+  </div>
+  <button class="purple" onclick="openMenu('myFirstMenu')">Open menu left</button>
+  <button class="green" onclick="openMenu('mySecondMenu')">Open menu right</button>
 </body></textarea>
     <p>
       You can use all features of <a href="#colors">colors theme</a>, <a href="#icons">icons</a> and <a href="#list">list</a> in menu.
     </p>
-<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div" id-result="resultmenu1" height-preview="400px" border="true">
+<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div|grey-200,grey-200 body" height-preview="400px" border="true" multiplatform="true">
 <body class="padding grey-200">
   <div class="menu white" id="myMenu">
     <div class="list without-border">
@@ -1174,6 +1199,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+    <script type="text/javascript" src="mobileui/base.min.js"></script>
+    <script type="text/javascript" src="mobileui/button.min.js"></script>
+    <script type="text/javascript" src="mobileui/menu.min.js"></script>
     <script type="text/javascript" src="/js/main.js"></script>
   </body>
 </html>
