@@ -53,7 +53,7 @@
       </ul>
     </div>
 
-    <div class="menuland font-raleway"><h1>Getting started</h1><ul><a href="#getting-started"><li>Install</li></a></ul><h1>Components</h1><ul><a href="#colors"><li>Colors</li></a><a href="#icons"><li>Icons</li></a><a href="#header"><li>Header</li></a><a href="#button"><li>Button</li></a><a href="#list"><li>List</li></a><a href="#card"><li>Card</li></a><a href="#badge"><li>Badge</li></a><a href="#cover"><li>Cover</li></a><a href="#menu"><li>Menu</li></a></ul></div><div class="content font-raleway">
+    <div class="menuland font-raleway"><h1>Getting started</h1><ul><a href="#getting-started"><li>Install</li></a></ul><h1>Components</h1><ul><a href="#colors"><li>Colors</li></a><a href="#icons"><li>Icons</li></a><a href="#header"><li>Header</li></a><a href="#button"><li>Button</li></a><a href="#input"><li>Input</li></a><a href="#list"><li>List</li></a><a href="#card"><li>Card</li></a><a href="#badge"><li>Badge</li></a><a href="#cover"><li>Cover</li></a><a href="#menu"><li>Menu</li></a></ul></div><div class="content font-raleway">
     <h2 class="title-doc" id="getting-started">Getting started</h2>
     <p>
       MobileUI is a simple and easy NPM package to install UI Components for web mobile apps using HTML, CSS and JavaScript.
@@ -652,6 +652,84 @@
   <button class="blue circle icon ion-ios-gear shadow float-bottom-left"></button>
 </body></textarea>
     
+    <h2 class="title-doc" id="input">Input</h2>
+    <p>
+      Inputs are essential in an application to collect user data, so we need to worry about the layout and MobileUI does it for you.
+    </p>
+    <p>
+      For use this components you need install with command:
+    </p>
+    <div class="dependency tooltip">
+      <strong>Dependency:</strong> <code>base</code> and <code>list</code>.
+      <span class="tooltiptext">The dependencies will be installed together with this module</span>
+    </div>
+    <pre>mobileui install input</pre>
+<textarea class="bind-code" mode="text/html">
+<div class="list">
+  <div class="item">
+    <input type="text" placeholder="First name">
+  </div>
+  <div class="item">
+    <input type="text" placeholder="Last name">
+  </div>
+  <div class="item">
+    <button class="green radius full">Create a new user</button>
+  </div>
+</div></textarea>
+    <p>If you put label on the items, you can have a line view of the component.</p>
+<textarea class="bind-code" mode="text/html">
+<div class="list">
+  <div class="item">
+    <label class="text-orange">Username</label>
+    <input type="text">
+  </div>
+  <div class="item">
+    <label class="text-orange">Password</label>
+    <input type="password">
+  </div>
+  <div class="item">
+    <button class="orange-900 radius full">Login user</button>
+  </div>
+</div></textarea>
+    <p>Use class <code>label-fixed</code> in <code>item</code> of the list for fixed the label.</p>
+<textarea class="bind-code" mode="text/html">
+<div class="list">
+  <div class="item label-fixed">
+    <label>Username</label>
+    <input type="text">
+  </div>
+  <div class="item label-fixed">
+    <label>Password</label>
+    <input type="password">
+  </div>
+  <div class="item">
+    <button class="blue radius full">Login user</button>
+  </div>
+</div></textarea>
+    <p>Input floating is a good option for forms login, just add class <code>label-float</code> in item.</p>
+<textarea class="bind-code" mode="text/html">
+<div class="list">
+  <div class="item label-float">
+    <label>Username</label>
+    <input type="text">
+  </div>
+  <div class="item label-float">
+    <label>Password</label>
+    <input type="password">
+  </div>
+  <div class="item">
+    <button class="pink radius full">Login user</button>
+  </div>
+</div></textarea>
+    <p>You can put <code>align-right</code> for align your text in right item.</p>
+    <textarea class="bind-code" mode="text/html">
+    <div class="list">
+      <div class="item label-fixed">
+        <label>Value</label>
+        <input type="number" class="align-right">
+      </div>
+    </div></textarea>
+    
     <h2 class="title-doc" id="list">List</h2>
     <p>
     For use this components you need install with command:
@@ -1202,6 +1280,7 @@
     <script type="text/javascript" src="mobileui/base.min.js"></script>
     <script type="text/javascript" src="mobileui/button.min.js"></script>
     <script type="text/javascript" src="mobileui/menu.min.js"></script>
+    <script type="text/javascript" src="mobileui/input.min.js"></script>
     <script type="text/javascript" src="/js/main.js"></script>
   </body>
 </html>
