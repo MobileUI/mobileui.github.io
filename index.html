@@ -53,7 +53,7 @@
       </ul>
     </div>
 
-    <div class="menuland font-raleway"><h1>Getting started</h1><ul><a href="#getting-started"><li>Install</li></a></ul><h1>Components</h1><ul><a href="#colors"><li>Colors</li></a><a href="#icons"><li>Icons</li></a><a href="#header"><li>Header</li></a><a href="#button"><li>Button</li></a><a href="#input"><li>Input</li></a><a href="#list"><li>List</li></a><a href="#card"><li>Card</li></a><a href="#badge"><li>Badge</li></a><a href="#cover"><li>Cover</li></a><a href="#menu"><li>Menu</li></a></ul></div><div class="content font-raleway"><div class="content-doc-reader">
+    <div class="menuland font-raleway"><h1>Getting started</h1><ul><a href="#getting-started"><li>Install</li></a></ul><h1>Components</h1><ul><a href="#base"><li>Base</li></a><a href="#colors"><li>Colors</li></a><a href="#icons"><li>Icons</li></a><a href="#header"><li>Header</li></a><a href="#button"><li>Button</li></a><a href="#input"><li>Input</li></a><a href="#list"><li>List</li></a><a href="#card"><li>Card</li></a><a href="#badge"><li>Badge</li></a><a href="#cover"><li>Cover</li></a><a href="#menu"><li>Menu</li></a></ul></div><div class="content font-raleway"><div class="content-doc-reader">
     <h2 class="title-doc" id="getting-started">Getting started</h2>
     <p>
       MobileUI is a simple and easy NPM package to install UI Components for web mobile apps using HTML, CSS and JavaScript.
@@ -80,6 +80,18 @@
     <pre>mobileui preview</pre>
     <p>By default an HTTP server will run on port 8080, but you can change it by passing the <code>--port</code> parameter with the desired port, eg <code>--port 8000</code></p>
     <a href="https://github.com/MobileUI/components/tree/master/base/install.html" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>
+</div><div class="content-doc-reader">
+    <h2 class="title-doc" id="base">Base</h2>
+    <p>
+      Base component contains the basic features to use MobileUI and any other component of this kit.
+      With this component you can use the <a href="#colors">color themes</a>, <a href="#icons">icons</a> and some classes of positioning and alignment of elements in the interface.
+    </p>
+    <p>
+      To use it you need to install with the command:
+    </p>
+    <pre>mobileui install base</pre>
+    <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr><tr><td><code>left </code></td><td>Floats any element to the left.</td></tr><tr><td><code>right </code></td><td>Floats any element to the right.</td></tr><tr><td><code>bottom </code></td><td>Floats any element to the right bottom.</td></tr><tr><td><code>align-left </code></td><td>Align text, icons, and elements to the left.</td></tr><tr><td><code>align-center </code></td><td>Align text, icons, and elements to the center.</td></tr><tr><td><code>align-right </code></td><td>Align text, icons, and elements to the right.</td></tr><tr><td><code>padding </code></td><td>Add an internal space.</td></tr><tr><td><code>radius </code></td><td>Add a small rounded border.</td></tr><tr><td><code>radius-big </code></td><td>Add a large rounded border.</td></tr><tr><td><code>circle </code></td><td>Add a circular border.</td></tr><tr><td><code>radius-left </code></td><td>Adds a small border just to the left.</td></tr><tr><td><code>radius-right </code></td><td>Adds a small border just to the right.</td></tr><tr><td><code>ellipsis </code></td><td>Limit the display of a text in only one line with periods at the end.</td></tr><tr><td><code>shadow </code></td><td>Create a shadow on an element (not text).</td></tr><tr><td><code>space </code></td><td>Add a space vertically.</td></tr><tr><td><code>margin-button </code></td><td>Add a margin on the bottom.</td></tr><tr><td><code>margin-top </code></td><td>Add a margin on the top.</td></tr><tr><td><code>text-shadow </code></td><td>Create a shadow in a text.</td></tr><tr><td><code>text-small </code></td><td>Leave the text and icons small.</td></tr><tr><td><code>text-big </code></td><td>Leave the text and icons large.</td></tr><tr><td><code>text-huge </code></td><td>Leave the text and icons huge.</td></tr><tr><td><code>text-light </code></td><td>Leave the text thinner.</td></tr><tr><td><code>text-bold </code></td><td>Leave a bold text.</td></tr><tr><td><code>text-strong </code></td><td>Leave the text thicker.</td></tr><tr><td><code>float-bottom-right </code></td><td>Floats an element in the footer to the right.</td></tr><tr><td><code>float-bottom-left </code></td><td>Floats an element in the footer to the left.</td></tr><tr><td><code>icon-circle </code></td><td>Create a completely round icon.</td></tr></table></div>
+    <a href="https://github.com/MobileUI/components/tree/master/base/base.html" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>
 </div><div class="content-doc-reader">
     <h2 class="title-doc" id="colors">Colors</h2>
     <p>MobileUI use the suggestions material design colors because material takes cues from contemporary architecture, road signs, pavement marking tape, and athletic courts. Color should be unexpected and vibrant.</p>
@@ -439,6 +451,8 @@
       <span class="tooltiptext">The dependencies will be installed together with this module</span>
     </div>
     <pre>mobileui install header</pre>
+    <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr><tr><td><code>header </code></td><td>Create a fixed bar at the top of the page.</td></tr><tr><td><code>bottom </code></td><td>Create a fixed bar at the bottom of the page.</td></tr><tr><td><code>sub </code></td><td>If used with <code>header</code> create a fixed sub-bar at the top of the page, if using with <code>bottom</code> creates a fixed sub-bar at the bottom.</td></tr><tr><td><code>has-header </code></td><td>Used in the parent element of the <code>header</code>, or body element, to define that the page uses <code>header</code>.</td></tr><tr><td><code>has-sub-header </code></td><td>Used in the parent element of the <code>header</code> and <code>sub</code>, or body element, to define that the page uses <code>sub</code>.</td></tr><tr><td><code>has-footer </code></td><td>Used in the parent element of the <code>header</code> and <code>bottom</code>, or body element, to define that the page uses <code>header</code> in bottom.</td></tr><tr><td><code>has-sub-footer </code></td><td>Used in the parent element of the <code>header</code> with <code>sub</code> and <code>bottom</code>, or body element, to define that the page uses <code>sub</code> in bottom.</td></tr><tr><td><code>title </code></td><td>Create a title in the header.</td></tr><tr><td><code>icon-badge </code></td><td>Create a floating badge next to an icon.</td></tr></table></div>
+    <p>You can use all features the <a href="#base">base</a> MobileUI in this component.</p>
 
 
 <textarea class="bind-code" mode="text/html">
@@ -616,6 +630,8 @@
       <span class="tooltiptext">The dependencies will be installed together with this module</span>
     </div>
     <pre>mobileui install button</pre>
+    <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr><tr><td><code>icon-text </code></td><td>Determines that the button will have an icon.</td></tr><tr><td><code>icon-right </code></td><td>If the button has the class <code>icon-text</code> and <code>icon-right</code> the icon will be aligned to the right.</td></tr><tr><td><code>full </code></td><td>Leave the button occupying 100% width of the screen.</td></tr><tr><td><code>big  </code></td><td>Leave the big button.</td></tr><tr><td><code>small </code></td><td>Leave the small button.</td></tr><tr><td><code>buttons-group </code></td><td>Create groups of buttons</td></tr></table></div>
+    <p>You can use all features the <a href="#base">base</a> MobileUI in this component.</p>
 
 
 <textarea class="bind-code" mode="text/html">
@@ -624,7 +640,11 @@
 <p>Customize as you wish:</p>
 <button class="brown border-brown-800 text-brown-50 radius icon-text">
   <i class="icon ion-ios-settings-strong"></i>
-  Configure your workspace
+  Setting
+</button>
+<button class="brown border-brown-800 text-brown-50 radius icon-text icon-right">
+  <i class="icon ion-ios-settings-strong"></i>
+  Setting
 </button>
 <p>Social login:</p>
 <button class="blue icon-text">
@@ -675,6 +695,8 @@
       <span class="tooltiptext">The dependencies will be installed together with this module</span>
     </div>
     <pre>mobileui install input</pre>
+    <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr><tr><td><code>label-fixed </code></td><td>Define a fixed label beside the input element.</td></tr><tr><td><code>label-float </code></td><td>Define a floating label above the input element.</td></tr></table></div>
+    <p>You can use all features the <a href="#base">base</a> and <a href="#list">list</a> components in this component.</p>
 <textarea class="bind-code" mode="text/html">
 <div class="list">
   <div class="item">
@@ -751,7 +773,8 @@
     <span class="tooltiptext">The dependencies will be installed together with this module</span>
     </div>
     <pre>mobileui install list</pre>
-
+    <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr><tr><td><code>list </code></td><td>Define an element as list. This feature depends on the <code>item</code> to function properly.</td></tr><tr><td><code>item </code></td><td>Define an element as item. This feature depends on the <code>list</code> to function properly.</td></tr><tr><td><code>space-small </code></td><td>Define a small space between the top and bottom elements.</td></tr><tr><td><code>without-border </code></td><td>Define that a list or an item has no borders.</td></tr><tr><td><code>full </code></td><td>Define an item without internal spaces.</td></tr><tr><td><code>avatar </code></td><td>Set a fixed size for an image.</td></tr><tr><td><code>avatar-badge </code></td><td>Set a floating badge above the image.</td></tr></table></div>
+    <p>You can use all features the <a href="#base">base</a> MobileUI in this component.</p>
 
 <textarea class="bind-code" mode="text/html">
 <div class="list">
@@ -779,14 +802,14 @@
 <div class="list">
   <div class="item">
     <div class="left">
-      <img class="avatar" src="/img/80.jpg">
+      <img class="avatar circle" src="/img/80.jpg">
     </div>
     <h2>Jeanette Fletcher</h2>
     <p class="text-grey-500">jeanette.fletcher15@example.com</p>
   </div>
   <div class="item">
     <div class="right">
-      <img class="avatar" src="/img/80.jpg">
+      <img class="avatar radius" src="/img/80.jpg">
     </div>
     <h2>Chad Black</h2>
     <p class="text-grey-500">chad.black48@example.com</p>
@@ -811,12 +834,12 @@
     <p>You can combinate with others components and class.</p>
 <textarea class="bind-code" mode="text/html" replace="body,div">
 <body class="padding grey-100">
-  <h1 class="bold">List of contacts</h1>
+  <h1 class="text-bold">List of contacts</h1>
   <p>List of your contacts save in this deivce.</p>
   <div class="list radius white">
     <div class="item">
       <div class="left">
-        <img class="avatar" src="/img/80.jpg">
+        <img class="avatar radius" src="/img/80.jpg">
       </div>
       <h2>Jeanette Fletcher</h2>
       <p class="text-grey-500">jeanette.fletcher15@example.com</p>
@@ -831,7 +854,7 @@
       </div>
     </div>
     <div class="item">
-      <img class="avatar left" src="/img/33.jpg">
+      <img class="avatar radius left" src="/img/33.jpg">
       <i class="right align-top icon ion-ios-arrow-right"></i>
       <h2>Carter Hudson</h2>
       <p class="text-grey-500">Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -839,7 +862,7 @@
     </div>
     <div class="item">
       <span class="avatar-badge text-small red radius padding">4</span>
-      <img class="avatar left" src="/img/96.jpg">
+      <img class="avatar circle left" src="/img/96.jpg">
       <h2>Juster Mark Slow</h2>
       <span class="text-small green radius padding">new</span>
       <span class="text-small purple radius padding">family</span>
@@ -860,7 +883,7 @@
 </div>
 <div class="cover padding align-center" style="background-image:url(/img/backtop.png)">
   <div class="space"></div>
-  <img class="avatar border-white shadow" src="/img/33.jpg">
+  <img class="avatar circle border-white shadow" src="/img/33.jpg">
   <h1 class="text-white">Carter Hudson</h1>
   <div class="space"></div>
   <div class="buttons-group full">
@@ -871,7 +894,7 @@
 <div class="list">
   <div class="item">
     <div class="left">
-      <img class="avatar" src="/img/80.jpg">
+      <img class="avatar circle" src="/img/80.jpg">
     </div>
     <h2>Jeanette Fletcher</h2>
     <p class="text-grey">+55 7979 325 655</p>
@@ -884,7 +907,7 @@
   </div>
   <div class="item">
     <div class="left">
-      <img class="avatar" src="/img/53.jpg">
+      <img class="avatar circle" src="/img/53.jpg">
     </div>
     <h2>Emilio Dias</h2>
     <p class="text-grey">+55 8989 325 655</p>
@@ -897,7 +920,7 @@
   </div>
   <div class="item">
     <div class="left">
-      <img class="avatar" src="/img/96.jpg">
+      <img class="avatar circle" src="/img/96.jpg">
     </div>
     <h2>Marcos Paulo</h2>
     <p class="text-grey">+55 1245 325 655</p>
@@ -910,7 +933,7 @@
   </div>
   <div class="item">
     <div class="left">
-      <img class="avatar" src="/img/33.jpg">
+      <img class="avatar circle" src="/img/33.jpg">
     </div>
     <h2>Carter Hudson</h2>
     <p class="text-grey">+55 8797 325 655</p>
@@ -984,7 +1007,7 @@
     <div class="list shadow radius white">
     <div class="item">
       <div class="left">
-        <img class="avatar" src="/img/80.jpg">
+        <img class="avatar circle" src="/img/80.jpg">
       </div>
       <h2>Jeanette Fletcher</h2>
       <p>jeanette.fletcher15@example.com</p>
@@ -1024,14 +1047,14 @@
 <textarea class="bind-code" mode="text/html">
 <div class="list">
   <div class="item">
-    <img class="avatar left" src="/img/96.jpg">
+    <img class="avatar circle left" src="/img/96.jpg">
     <h2>Juster Mark Slow</h2>
     <span class="text-small green radius padding">new</span>
     <span class="text-small purple radius padding">family</span>
     <span class="text-small pink radius padding">university</span>
   </div>
   <div class="item">
-    <img class="avatar left" src="/img/33.jpg">
+    <img class="avatar circle left" src="/img/33.jpg">
     <h2>Carter Hudson</h2>
     <span class="text-small purple radius padding">family</span>
     <span class="text-small pink radius padding">university</span>
@@ -1054,6 +1077,8 @@
         <span class="tooltiptext">The dependencies will be installed together with this module</span>
       </div>
       <pre>mobileui install cover</pre>
+      <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr><tr><td><code>cover </code></td><td>Define that an element has a <code>background-image</code> and must cover the space required.</td></tr><tr><td><code>avatar </code></td><td>Limit the size of an image and add large border.</td></tr><tr><td><code>float-bottom-left </code></td><td>Float an element in the footer on the left.</td></tr><tr><td><code>float-bottom-right </code></td><td>Float an element in the footer on the right.</td></tr><tr><td><code>gradient </code></td><td>Set a gradient effect from black to transparent in the background of an element.</td></tr><tr><td><code>blend-multiply </code></td><td>Used when a <code>background-image</code> is set to apply the multiply effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-multiply">multiply blend mode</a></td></tr><tr><td><code>blend-screen </code></td><td>Used when a <code>background-image</code> is set to apply the screen effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-screen">screen blend mode</a></td></tr><tr><td><code>blend-overlay </code></td><td>Used when a <code>background-image</code> is set to apply the overlay effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-overlay">overlay blend mode</a></td></tr><tr><td><code>blend-darken </code></td><td>Used when a <code>background-image</code> is set to apply the darken effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-darken">darken blend mode</a></td></tr><tr><td><code>blend-lighten </code></td><td>Used when a <code>background-image</code> is set to apply the lighten effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-lighten">lighten blend mode</a></td></tr><tr><td><code>blend-color-dodge </code></td><td>Used when a <code>background-image</code> is set to apply the color-dodge effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-color-dodge">color-dodge blend mode</a></td></tr><tr><td><code>blend-color-burn </code></td><td>Used when a <code>background-image</code> is set to apply the color-burn effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-color-burn">color-burn blend mode</a></td></tr><tr><td><code>blend-hard-light </code></td><td>Used when a <code>background-image</code> is set to apply the hard-light effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-hard-light">hard-light blend mode</a></td></tr><tr><td><code>blend-soft-light </code></td><td>Used when a <code>background-image</code> is set to apply the soft-light effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-soft-light">soft-light blend mode</a></td></tr><tr><td><code>blend-luminosity </code></td><td>Used when a <code>background-image</code> is set to apply the luminosity effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-luminosity">luminosity blend mode</a></td></tr></table></div>
+      <p>You can use all features the <a href="#base">base</a> MobileUI in this component.</p>
 <textarea class="bind-code" mode="text/html">
 <div class="cover align-center" style="background-image:url(/img/aurora-boreal-rosa.jpg)">
   <div class="space"></div>
@@ -1110,7 +1135,7 @@
     </div>
   </div>
   <div class="cover blue align-center blend-soft-light" style="background-image:url(/img/backtop.png)">
-    <img class="avatar border-white shadow" src="/img/33.jpg">
+    <img class="avatar circle border-white shadow" src="/img/33.jpg">
     <h1 class="text-white">Carter Hudson</h1>
     <p>+55 45 9878 9878</p>
     <button class="blue-900 big circle float-bottom-right icon ion-ios-telephone"></button>
@@ -1118,7 +1143,7 @@
   <div class="list">
     <div class="item">
       <div class="left">
-        <img class="avatar" src="/img/80.jpg">
+        <img class="avatar circle" src="/img/80.jpg">
       </div>
       <h2>Jeanette Fletcher</h2>
       <p class="text-grey">+55 7979 325 655</p>
@@ -1131,7 +1156,7 @@
     </div>
     <div class="item">
       <div class="left">
-        <img class="avatar" src="/img/53.jpg">
+        <img class="avatar circle" src="/img/53.jpg">
       </div>
       <h2>Emilio Dias</h2>
       <p class="text-grey">+55 8989 325 655</p>
@@ -1144,7 +1169,7 @@
     </div>
     <div class="item">
       <div class="left">
-        <img class="avatar" src="/img/96.jpg">
+        <img class="avatar circle" src="/img/96.jpg">
       </div>
       <h2>Marcos Paulo</h2>
       <p class="text-grey">+55 1245 325 655</p>
@@ -1157,7 +1182,7 @@
     </div>
     <div class="item">
       <div class="left">
-        <img class="avatar" src="/img/33.jpg">
+        <img class="avatar circle" src="/img/33.jpg">
       </div>
       <h2>Carter Hudson</h2>
       <p class="text-grey">+55 8797 325 655</p>
@@ -1177,7 +1202,7 @@
 <div class="list radius shadow">
   <div class="item without-border">
     <div class="left">
-      <img class="avatar" src="/img/65.jpg">
+      <img class="avatar circle" src="/img/65.jpg">
     </div>
     <h2>Joanne Johnson</h2>
     <p class="text-grey">Posted a new item for sale.</p>
@@ -1186,7 +1211,7 @@
     </div>
   </div>
   <div class="item without-border cover radius" style="background-image:url(/img/bike.png)">
-    <div class="text-small gradient align-bottom padding text-white text-light radius">
+    <div class="text-small gradient bottom padding text-white text-light radius">
       <span class="amber-300 radius padding text-big text-strong">$198</span>
       Great for casual weekend outings :)
     </div>
@@ -1218,6 +1243,7 @@
       <span class="tooltiptext">The dependencies will be installed together with this module</span>
     </div>
     <pre>mobileui install menu</pre>
+    <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr><tr><td><code>menu </code></td><td>Define an element being a menu, being able to disconnect over the page or to push the page, depending on the operating system.</td></tr><tr><td><code>menu-right </code></td><td>Set a menu on the right side.</td></tr><tr><td><code>open </code></td><td>Set a menu is open.</td></tr></table></div>
     <p>
       Your menu need have <code>id</code> and for you open menu, just call function <code>openMenu('ID_YOUR_MENU')</code>, for close menu just call function <code>closeMenu('ID_YOU_MENU')</code>.
       By default the menu is created in the left, but you can add class <code>menu-right</code> for create menu in right position.
@@ -1225,7 +1251,7 @@
     <p>See example:</p>
 <textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div|grey-200,grey-200 body" height-preview="400px" border="true" multiplatform="true">
 <body class="padding grey-200">
-  <div class="menu menu purple" id="myFirstMenu">
+  <div class="menu purple" id="myFirstMenu">
     <button class="purple-100 full" onclick="closeMenu('myFirstMenu')">Close menu </button>
   </div>
   <div class="menu menu-right green" id="mySecondMenu">
@@ -1243,7 +1269,7 @@
     <div class="list without-border">
       <div class="item blue">
         <div class="left">
-          <img class="avatar" src="/img/80.jpg">
+          <img class="avatar circle" src="/img/80.jpg">
         </div>
         <h1>Jeanette Fletcher</h1>
         <p>jeanette@example.com</p>
@@ -1296,7 +1322,7 @@
 <body class="padding grey-100 has-header has-sub-header">
   <div class="menu teal-900 cover blend-multiply" id="menuDiscover" style="background-image:url(/img/nature1.jpg)">
     <div class="cover align-center">
-      <img class="avatar border-white shadow" src="/img/33.jpg">
+      <img class="avatar circle border-white shadow" src="/img/33.jpg">
       <h1 class="text-teal-300">Carter Hudson</h1>
       <p class="text-grey">carter.hudson@mail.com</p>
     </div>
@@ -1360,7 +1386,7 @@
   <div class="list white without-border radius shadow">
     <div class="item">
       <div class="left">
-        <img class="avatar" src="/img/33.jpg" />
+        <img class="avatar radius" src="/img/33.jpg" />
       </div>
       <h2 class="strong">Carter Hudson</h2>
       <p class="text-red-400">@carterhudson</p>
