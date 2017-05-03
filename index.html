@@ -29,7 +29,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway:400,700|Roboto:300,400,900," rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway:300,400,700|Roboto:300,400,900," rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
     <link rel="stylesheet" href="/mobileui/imports.css">
     <link rel="stylesheet" href="/css/master.css">
@@ -52,20 +52,39 @@
         </li>
       </ul>
     </div>
+    <div class="banner">
+      <h1 class="font-raleway">Create beautiful and efficient hybrid and mobile web apps!</h1>
+      <h2 class="font-raleway">You can use the components yourself or in Progressive Web Apps and Apache Cordova Apps.</h2>
+      <ul class="hero-cards">
+					<li class="hero-card-1"></li>
+					<li class="hero-card-2"></li>
+					<li class="hero-card-3"></li>
+					<li class="hero-card-4"></li>
+					<li class="hero-card-5"></li>
+					<li class="hero-card-6"></li>
+					<li class="hero-card-7"></li>
+					<li class="hero-card-8"></li>
+					<li class="hero-card-9"></li>
+			</ul>
+    </div>
 
     <div class="menuland font-raleway"><h1>Getting started</h1><ul><a href="#getting-started"><li>Install</li></a></ul><h1>Components</h1><ul><a href="#base"><li>Base</li></a><a href="#colors"><li>Colors</li></a><a href="#icons"><li>Icons</li></a><a href="#header"><li>Header</li></a><a href="#button"><li>Button</li></a><a href="#input"><li>Input</li></a><a href="#list"><li>List</li></a><a href="#card"><li>Card</li></a><a href="#badge"><li>Badge</li></a><a href="#cover"><li>Cover</li></a><a href="#menu"><li>Menu</li></a></ul></div><div class="content font-raleway"><div class="content-doc-reader">
     <h2 class="title-doc" id="getting-started">Getting started</h2>
     <p>
-      MobileUI is a simple and easy NPM package to install UI Components for web mobile apps using HTML, CSS and JavaScript.
+      MobileUI was created thinking of making your hybrid application <strong>faster</strong> and <strong>smaller</strong>, since you only install what you
+      are really going to use for UI.
     </p>
     <p>
-      A rich variety of UI components specially designed for mobile apps. MobileUI provides tabs, side menu, stack navigation and tons of other components such as lists and forms.
-      They all have iOS and Android support, with automatic styling that will change the appearance of the app based on the platform. With MobileUI you can truly support both Android, iOS and anothers with the same source code.
+      Certainly you will love using it in  <a href="https://developers.google.com/web/progressive-web-apps/" target="_blank">Progressive Web Apps</a>
+      and <a href="https://cordova.apache.org/" target="_blank">Apache Cordova Apps</a>.
+      You can use only the components you want in your projects created with <a href="http://phonegap.com/" target="_blank">PhoneGap</a>,
+      <a href="http://ionicframework.com/" target="_blank">Ionic Framework</a>, <a href="https://onsen.io/" target="_blank">Onsen UI</a>,
+      <a href="http://framework7.io/" target="_blank">Framework7</a> and others focused on creating web apps.
     </p>
     <p>
-      MobileUI was created thinking of making your hybrid application <strong>faster</strong> and <strong>smaller</strong>, since you only install what you are really going to use for UI.
-      The components are designed to be used as a basis for <a href="https://cordova.apache.org/" target="_blank">Apache Cordova</a>, but you can use it in other projects created with Adobe PhoneGap,
-      Ionic, Monaca, Onsen UI and others.
+      A rich variety of UI components specially designed for mobile apps. MobileUI provides tabs, side menu, stack navigation and tons of other components
+      such as lists and forms. Some of the existing components are displayed differently on Android and iOS, with automatic styling that will change the
+      appearance of the app based on the platform.
     </p>
     <p>
       The Installation is very simple, but first you need to install <a href="https://nodejs.org" target="_blank">Node.js</a>
@@ -73,7 +92,7 @@
     <p>
       After, just execute command in your terminal:
     </p>
-    <pre>npm install mobileui -g</pre>
+    <pre>npm install -g mobileui</pre>
     <p>See this usage example for the header and list components.</p>
     <pre>mobileui install header list</pre>
     <p>MoboleUI has a feature to view your application directly in the browser and with livereload feature. To do this, type the command below.</p>
@@ -103,9 +122,13 @@
     <pre>mobileui install base</pre>
     <p>And just add the class in your component to use the color, example:  </p>
     <textarea class="bind-code" mode="text/html">
-<p class="purple">Title example here</p>
-<p class="border-pink text-pink">Title example here</p>
-<p class="red-100 text-red-900">Title example here with color text change</p></textarea>
+<div class="green-50 padding">
+  Lorem ipsum <span class="text-red">dolor</span> sit amet,
+  <span class="border-blue">consectetur</span> out set
+  <span class="text-pink text-bold">adipisicing</span> elit,
+  sed do eiusmod tempor incididunt ut
+  <span class="amber-300">labore et dolore</span> magna aliqua.
+</div></textarea>
 
     <h3 class="sub-title-doc">Colors MobileUI:</h3>
     <div class="color-palettes">
@@ -432,12 +455,40 @@
     <p>
       And add <code>icon</code> and the Ionicon classname for the icon to show, which can be easily looked up on the <a href="http://ionicons.com/" target="_blank">Ionicons</a> homepage. You can change the color add class colors for text.
     </p>
-    <textarea class="bind-code" mode="text/html">
-  <i class="icon ion-navicon"></i>
-  <i class="icon ion-heart text-red"></i>
-  <i class="icon ion-refresh"></i>
-  <i class="icon ion-chatbox-working"></i>
-  <i class="icon ion-wifi text-green"></i></textarea>
+    <textarea class="bind-code" mode="text/html" custom-class="result-icon">
+<i class="icon ion-navicon"></i>
+<i class="icon ion-heart red"></i>
+<i class="icon ion-refresh"></i>
+<i class="icon ion-chatbox-working"></i>
+<i class="icon ion-wifi green"></i>
+<i class="icon ion-gear-a"></i>
+<i class="icon ion-trash-a red"></i>
+<i class="icon ion-clipboard blue"></i>
+<i class="icon ion-pie-graph"></i>
+<i class="icon ion-person-add"></i>
+<br>
+<i class="icon ion-ios-heart-outline"></i>
+<i class="icon ion-ios-home-outline"></i>
+<i class="icon ion-ios-cloud-upload-outline"></i>
+<i class="icon ion-ios-loop"></i>
+<i class="icon ion-ios-cart-outline"></i>
+<i class="icon ion-ios-gear-outline"></i>
+<i class="icon ion-ios-alarm-outline"></i>
+<i class="icon ion-ios-calendar-outline"></i>
+<i class="icon ion-ios-camera-outline"></i>
+<i class="icon ion-ios-location-outline"></i>
+<br>
+<i class="icon ion-android-favorite"></i>
+<i class="icon ion-android-alarm-clock"></i>
+<i class="icon ion-android-calendar"></i>
+<i class="icon ion-android-star-outline"></i>
+<i class="icon ion-android-star-half"></i>
+<i class="icon ion-android-star"></i>
+<i class="icon ion-android-restaurant"></i>
+<i class="icon ion-android-drafts"></i>
+<i class="icon ion-android-delete"></i>
+<i class="icon ion-android-happy"></i>
+</textarea>
     <a href="https://github.com/MobileUI/components/tree/master/base/icons.html" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>
 </div><div class="content-doc-reader">
     <h2 class="title-doc" id="header">Header</h2>
@@ -914,7 +965,7 @@
     <div class="right">
       <small class="text-grey">
         12 min
-        <i class="icon ion-android-sad text-red"></i>
+        <i class="icon ion-android-sad red"></i>
       </small>
     </div>
   </div>
@@ -927,7 +978,7 @@
     <div class="right">
       <small class="text-grey">
         32 min
-        <i class="icon ion-android-sad text-red"></i>
+        <i class="icon ion-android-sad red"></i>
       </small>
     </div>
   </div>
@@ -1150,7 +1201,7 @@
       <div class="right">
         <small class="text-grey">
           5 min
-          <i class="icon ion-android-happy text-green"></i>
+          <i class="icon ion-android-happy green"></i>
         </small>
       </div>
     </div>
@@ -1176,7 +1227,7 @@
       <div class="right">
         <small class="text-grey">
           32 min
-          <i class="icon ion-android-sad text-red"></i>
+          <i class="icon ion-android-sad red"></i>
         </small>
       </div>
     </div>
@@ -1189,7 +1240,7 @@
       <div class="right">
         <small class="text-grey">
           1h 12 min
-          <i class="icon ion-android-happy text-green"></i>
+          <i class="icon ion-android-happy green"></i>
         </small>
       </div>
     </div>
@@ -1329,13 +1380,13 @@
     <div class="list without-border">
       <a class="item space-small">
         <div class="left">
-          <i class="icon ion-ios-heart-outline text-grey-300"></i>
+          <i class="icon ion-ios-heart-outline grey-300"></i>
         </div>
         <h1 class="text-grey-300">My Discoveries</h1>
       </a>
       <a class="item space-small">
         <div class="left">
-          <i class="icon ion-ios-flame-outline text-grey-300"></i>
+          <i class="icon ion-ios-flame-outline grey-300"></i>
         </div>
         <h1 class="text-grey-300">Trending</h1>
         <div class="right">
@@ -1344,13 +1395,13 @@
       </a>
       <a class="item space-small">
         <div class="left">
-          <i class="icon ion-ios-location-outline text-grey-300"></i>
+          <i class="icon ion-ios-location-outline grey-300"></i>
         </div>
         <h1 class="text-grey-300">Places</h1>
       </a>
       <a class="item space-small">
         <div class="left">
-          <i class="icon ion-ios-person-outline text-grey-300"></i>
+          <i class="icon ion-ios-person-outline grey-300"></i>
         </div>
         <h1 class="text-grey-300">People</h1>
         <div class="right">
@@ -1359,7 +1410,7 @@
       </a>
       <a class="item space-small">
         <div class="left">
-          <i class="icon ion-ios-chatbubble-outline text-grey-300"></i>
+          <i class="icon ion-ios-chatbubble-outline grey-300"></i>
         </div>
         <h1 class="text-grey-300">Notifications</h1>
       </a>
