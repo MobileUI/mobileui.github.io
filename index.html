@@ -29,7 +29,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link href="https://fonts.googleapis.com/css?family=Chewy|Dosis|Raleway:300,400,700|Roboto:300,400,900," rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chewy|Dosis|Monoton|Raleway:300,400,700|Roboto:300,400,900|Open+Sans:300," rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
     <link rel="stylesheet" href="/mobileui/imports.css">
     <link rel="stylesheet" href="/css/master.css">
@@ -68,7 +68,7 @@
 			</ul>
     </div>
 
-    <div class="menuland font-raleway"><h1>Getting started</h1><ul><a href="#getting-started"><li>Install</li></a></ul><h1>Components</h1><ul><a href="#base"><li>Base</li></a><a href="#colors"><li>Colors</li></a><a href="#icons"><li>Icons</li></a><a href="#header"><li>Header</li></a><a href="#button"><li>Button</li></a><a href="#input"><li>Input</li></a><a href="#list"><li>List</li></a><a href="#card"><li>Card</li></a><a href="#badge"><li>Badge</li></a><a href="#cover"><li>Cover</li></a><a href="#menu"><li>Menu</li></a><a href="#grid"><li>Grid</li></a></ul><h1>Frameworks</h1><ul><a href="#jquery"><li>jQuery</li></a></ul></div><div class="content font-raleway"><div class="content-doc-reader">
+    <div class="menuland font-raleway"><h1>Getting started</h1><ul><a href="#getting-started"><li>Install</li></a></ul><h1>Components</h1><ul><a href="#base"><li>Base</li></a><a href="#colors"><li>Colors</li></a><a href="#icons"><li>Icons</li></a><a href="#fonts"><li>Fonts</li></a><a href="#header"><li>Header</li></a><a href="#button"><li>Button</li></a><a href="#input"><li>Input</li></a><a href="#list"><li>List</li></a><a href="#card"><li>Card</li></a><a href="#badge"><li>Badge</li></a><a href="#cover"><li>Cover</li></a><a href="#menu"><li>Menu</li></a><a href="#grid"><li>Grid</li></a></ul><h1>Frameworks</h1><ul><a href="#jquery"><li>jQuery</li></a></ul></div><div class="content font-raleway"><div class="content-doc-reader">
     <h2 class="title-doc" id="getting-started">Getting started</h2>
     <p>
       MobileUI was created thinking of making your hybrid application <strong>faster</strong> and <strong>smaller</strong>, since you only install what you
@@ -492,6 +492,28 @@
 </textarea>
     <a href="https://github.com/MobileUI/components/tree/master/base/icons.html" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>
 </div><div class="content-doc-reader">
+    <h2 class="title-doc" id="fonts">Fonts</h2>
+    <p>
+      One of MobileUI's primary concerns is UX Design, so we offer a simple way to install new fonts in your web apps.
+    </p>
+    <p>
+      You can install any source in the <a href="https://fonts.google.com" target="_blank">Google Fonts</a> repository.
+      Example, I want to install the fonts <a href="https://fonts.google.com/?selection.family=Monoton|Open+Sans:300&query=open" target="_blank">Open Sans light and Monoton</a>,
+      my command would look like this:
+    </p>
+    <pre>mobileui install font "Monoton|Open+Sans:300"</pre>
+<textarea class="bind-code" mode="text/html">
+<div class="blue align-center padding">
+  <h1 style="font-family: 'Monoton', cursive;font-size:50px">
+    Google Fonts
+  </h1>
+  <h2 style="font-family: 'Open Sans', sans-serif;font-size:22px">
+    Making the web more beautiful, fast, and open through great typography
+  </h2>
+</div></textarea>
+
+    <a href="https://github.com/MobileUI/components/tree/master/base/fonts.html" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>
+</div><div class="content-doc-reader">
     <h2 class="title-doc" id="header">Header</h2>
     <p>
       Headers are fixed regions at the top of a screen that can contain a title label, and left/right buttons for navigation or to carry out various actions.
@@ -847,7 +869,7 @@
   </div>
 </div></textarea>
     <p>You can be creative and also use the other components such as <a href="#cover">cover</a> and <a href="#grid">grid</a> components.
-      For this we recommend you use the module NPM <a href="https://www.npmjs.com/package/getfont" target="_blank">getfont</a>.</p>
+      And you can install new fonts using feature <a href="#fonts">fonts</a>.</p>
 <textarea class="bind-code" mode="text/html" replace="body,div" height-preview="500px" header-absolute="true">
 <style>
   #titleDiscoveryNow {
