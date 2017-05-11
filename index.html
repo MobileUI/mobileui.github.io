@@ -1683,131 +1683,329 @@
 </body></textarea>
     <a href="https://github.com/MobileUI/components/tree/master/menu/index.html" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>
 </div><div class="content-doc-reader">
-    <h2 class="title-doc" id="grid">Grid</h2>
-    <p>MobileUI use <a href="https://www.w3.org/TR/css-flexbox-1/" target="_blank">CSS Flexible Box Layout Module</a> standard.</p>
-    <p>
-      Simply add columns you want in a row, and they'll evenly take up the available space. If you want three columns, add three columns,
-      if you want five columns, add five columns. There's no restriction to a 12 column grid, or having to explicitly state how large each
-      column should be.
-    </p>
-    <p>
-      The <code>row</code> classname is used to designate, surprise, a row, and <code>col</code> is used for a column.
-      In the demo to the right we chose to have four, then two, columns, but we could have just as easily used 3, 6, 7, 23, etc.,
-      it doesn't matter. Point is, add the number of columns your layout requires and don't worry about figuring out the percentages because it
-      figures it out automatically.
-    </p>
-      <p>
-        For use this components you need install with command:
-      </p>
-      <pre>mobileui install grid</pre>
-      <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr><tr><td><code>row </code></td><td>Create a line.</td></tr><tr><td><code>col </code></td><td>Create a column.</td></tr><tr><td><code>col-10 </code></td><td>Create a column with 10% of the row.</td></tr><tr><td><code>col-20 </code></td><td>Create a column with 20% of the row.</td></tr><tr><td><code>col-25 </code></td><td>Create a column with 25% of the row.</td></tr><tr><td><code>col-34 </code></td><td>Create a column with 33% of the row.</td></tr><tr><td><code>col-50 </code></td><td>Create a column with 50% of the row.</td></tr><tr><td><code>col-55 </code></td><td>Create a column with 55% of the row.</td></tr><tr><td><code>col-67 </code></td><td>Create a column with 66% of the row.</td></tr><tr><td><code>col-75 </code></td><td>Create a column with 75% of the row.</td></tr><tr><td><code>col-80 </code></td><td>Create a column with 80% of the row.</td></tr><tr><td><code>col-90 </code></td><td>Create a column with 90% of the row.</td></tr><tr><td><code>col-center </code></td><td>Center a column on the row.</td></tr><tr><td><code>without-padding-top </code></td><td>Remove internal space top the row.</td></tr></table></div>
-<textarea class="bind-code" mode="text/html">
-<div class="row">
-  <div class="col red">
-    col1
-  </div>
-  <div class="col blue">
-    col2
-  </div>
-</div>
-<br>
-<div class="row">
-  <div class="col red">
-    col1
-  </div>
-  <div class="col blue">
-    col2
-  </div>
-  <div class="col green">
-    col3
-  </div>
-</div>
-<br>
-<div class="row">
-  <div class="col-50 red">
-    col1 - 50%
-  </div>
-  <div class="col blue">
-    col2
-  </div>
-  <div class="col green">
-    col3
-  </div>
-</div></textarea>
-    <p>
-      See this good example using <a href="#header">header</a>, <a href="#cover">cover</a> and <a href="#list">list</a> components.
-    </p>
-<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div" height-preview="550px">
-<body class="has-header grey-200">
-<div class="header blue-grey-900">
-  <div class="left">
-    <button class="icon ion-navicon"></button>
-  </div>
-  <div class="title">
-     Angelina Jolie
-  </div>
-  <div class="right">
-    <button class="icon ion-android-search"></button>
-    <button class="icon ion-android-more-vertical"></button>
-  </div>
-</div>
-<div class="cover without-padding" style="background-image:url(/img/tombraider1.jpg)">
-  <div class="space-big"></div>
-  <div class="space-huge"></div>
-  <div class="list gradient without-border">
-    <div class="item space-small row text-white align-center">
-      <div class="col">
-        <span class="text-big text-bold">75</span>
-        <p class="text-small text-light text-grey-400">MOVIES</p>
+  <h2 class="title-doc" id="grid">Grid</h2>
+  <p>MobileUI use <a href="https://www.w3.org/TR/css-flexbox-1/" target="_blank">CSS Flexible Box Layout Module</a> standard.</p>
+  <p>
+    Simply add columns you want in a row, and they'll evenly take up the available space. If you want three columns, add three columns, if you want five columns, add five columns. There's no restriction to a 12 column grid, or having to explicitly state how
+    large each column should be.
+  </p>
+  <p>
+    The <code>row</code> classname is used to designate, surprise, a row, and <code>col</code> is used for a column. In the demo to the right we chose to have four, then two, columns, but we could have just as easily used 3, 6, 7, 23, etc., it doesn't
+    matter. Point is, add the number of columns your layout requires and don't worry about figuring out the percentages because it figures it out automatically.
+  </p>
+  <p>
+    For use this components you need install with command:
+  </p>
+  <pre>mobileui install grid</pre>
+  <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr><tr><td><code>row </code></td><td>Create a line.</td></tr><tr><td><code>row-between </code></td><td>Create a line that the columns are distributed in an equal space.</td></tr><tr><td><code>row-around </code></td><td>Create a line that the columns are distributed in an equal space around.</td></tr><tr><td><code>row-stretch </code></td><td>Create a stretch row, you need define height value.</td></tr><tr><td><code>column </code></td><td>Create a column.</td></tr><tr><td><code>wrap </code></td><td>Default all items will be on one line, whit this class add to row all items will wrap onto multiple lines, from top to bottom.</td></tr><tr><td><code>vertical-align-top </code></td><td>Align col to the top(Axis Y).</td></tr><tr><td><code>vertical-align-center </code></td><td>Align col to the center(Axis Y).</td></tr><tr><td><code>vertical-align-bottom </code></td><td>Align col to the bottom(Axis Y).</td></tr><tr><td><code>horizontal-align-left </code></td><td>Align col to the left(Axis X).</td></tr><tr><td><code>horizontal-align-center </code></td><td>Align col to the center(Axis X).</td></tr><tr><td><code>horizontal-align-right </code></td><td>Align col to the right(Axis X).</td></tr><tr><td><code>row-center </code></td><td>Center a column on the row.</td></tr><tr><td><code>col </code></td><td>Create a column with remaining space of the row.</td></tr><tr><td><code>col-10 </code></td><td>Create a column with 10% of the row.</td></tr><tr><td><code>col-20 </code></td><td>Create a column with 20% of the row.</td></tr><tr><td><code>col-25 </code></td><td>Create a column with 25% of the row.</td></tr><tr><td><code>col-34 </code></td><td>Create a column with 33.3333% of the row.</td></tr><tr><td><code>col-50 </code></td><td>Create a column with 50% of the row.</td></tr><tr><td><code>col-67 </code></td><td>Create a column with 66.6666% of the row.</td></tr><tr><td><code>col-75 </code></td><td>Create a column with 75% of the row.</td></tr><tr><td><code>col-80 </code></td><td>Create a column with 80% of the row.</td></tr><tr><td><code>col-90 </code></td><td>Create a column with 90% of the row.</td></tr></table></div>
+  <textarea class="bind-code" mode="text/html">
+    <div class="row">
+      <div class="col red">
+        col
       </div>
-      <div class="col">
-        <span class="text-big text-bold">37K</span>
-        <p class="text-small text-light text-grey-400">FOLLOWERS</p>
-      </div>
-      <div class="col">
-        <span class="text-big text-bold">265</span>
-        <p class="text-small text-light text-grey-400">FOLLOWING</p>
+      <div class="col blue">
+        col
       </div>
     </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-55 cover radius margin without-padding" style="background-image:url(/img/scene1.jpg)">
-    <div class="right text-small padding text-red">
-      <i class="icon ion-heart"></i> 233
+    <br>
+    <div class="row">
+      <div class="col red">
+        col
+      </div>
+      <div class="col blue">
+        col
+      </div>
+      <div class="col green">
+        col
+      </div>
     </div>
-    <div class="space-huge"></div>
-    <div class="space-big"></div>
-    <div class="bottom gradient padding radius">
-      <h1 class="text-white text-small">Cruel scene in Maleficent</h1>
+    <br>
+    <div class="row">
+      <div class="col-50 red">
+        col-50
+      </div>
+      <div class="col blue">
+        col
+      </div>
+      <div class="col green">
+        col
+      </div>
     </div>
-  </div>
-  <div class="col cover radius margin without-padding" style="background-image:url(/img/scene3.jpg)">
-    <div class="right text-small padding text-red">
-      <i class="icon ion-heart"></i> 55
+    <br />
+    <div class="row">
+      <div class="col-75 red">
+        col-75
+      </div>
+      <div class="col blue">
+        col
+      </div>
     </div>
-    <div class="space-huge"></div>
-    <div class="space-big"></div>
-    <div class="bottom gradient padding radius">
-      <h1 class="text-white text-small">Good scene</h1>
+    <br />
+    <div class="row">
+      <div class="col blue">
+        col
+      </div>
+      <div class="col-75 red">
+        col-75
+      </div>
     </div>
-  </div>
-</div>
-<div class="row padding without-padding-top">
-  <div class="col cover radius without-padding" style="background-image:url(/img/scene4.png)">
-    <div class="right text-small padding text-red">
-      <i class="icon ion-heart"></i> 876
+  </textarea>
+  <br />
+  <p>
+    See this good example using <code>row-between</code>.
+  </p>
+  <textarea class="bind-code" mode="text/html">
+    <div class="row-between">
+      <div class="col-20 red">
+        col-20
+      </div>
+      <div class="col-20 blue">
+        col-20
+      </div>
+      <div class="col-20 blue">
+        col-20
+      </div>
     </div>
-    <div class="space-huge"></div>
-    <div class="space-big"></div>
-    <div class="bottom gradient padding radius">
-      <h1 class="text-white text-small">Meet the Badass Women</h1>
+    <br>
+    <div class="row-between">
+      <div class="col-20 red">
+        col-20
+      </div>
+      <div class="col-20 blue">
+        col-20
+      </div>
+      <div class="col-20 green">
+        col-20
+      </div>
+      <div class="col-20 yellow">
+        col-20
+      </div>
     </div>
-  </div>
-</div>
-</body></textarea>
-
-    <a href="https://github.com/MobileUI/components/tree/master/grid/index.html" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>
+    <br>
+  </textarea>
+  <br />
+  <p>
+    See this good example using <code>row-around</code>.
+  </p>
+  <textarea class="bind-code" mode="text/html">
+    <div class="row-around">
+      <div class="col-20 red">
+        col-20
+      </div>
+      <div class="col-20 blue">
+        col-20
+      </div>
+      <div class="col-20 blue">
+        col-20
+      </div>
+    </div>
+    <br>
+    <div class="row-around">
+      <div class="col-20 red">
+        col-20
+      </div>
+      <div class="col-20 blue">
+        col-20
+      </div>
+      <div class="col-20 green">
+        col-20
+      </div>
+      <div class="col-20 yellow">
+        col-20
+      </div>
+    </div>
+    <br>
+  </textarea>
+  <br />
+  <p>
+    See how is easy align a column in the center, using <code>row-center</code>.
+  </p>
+  <textarea class="bind-code" mode="text/html">
+    <div class="row-center grey" style="height: 100px;">
+      <div class="col-20 red">
+        col-20
+      </div>
+    </div>
+    <br>
+  </textarea>
+  <br />
+  <p>
+    You can create a row with column direction, using <code>column</code>.
+  </p>
+  <textarea class="bind-code" mode="text/html">
+    <div class="column">
+      <div class="col-20 red">
+        col-20
+      </div>
+      <div class="col-20 blue">
+        col-20
+      </div>
+      <div class="col-20 green">
+        col-20
+      </div>
+    </div>
+    <br>
+  </textarea>
+  <br />
+  <p>
+    See this good example using <code>row</code> and <code>vertical-align-top</code>.
+  </p>
+  <textarea class="bind-code" mode="text/html">
+    <div class="row vertical-align-top grey" style="height: 100px;">
+      <div class="col-20 red">
+        col-20
+      </div>
+    </div>
+    <br>
+  </textarea>
+  <br />
+  <p>
+    See this good example using <code>row</code> and <code>vertical-align-center</code>.
+  </p>
+  <textarea class="bind-code" mode="text/html">
+    <div class="row vertical-align-center grey" style="height: 100px;">
+      <div class="col-20 red">
+        col-20
+      </div>
+    </div>
+    <br>
+  </textarea>
+  <br />
+  <p>
+    See this good example using <code>row</code> and <code>vertical-align-bottom</code>.
+  </p>
+  <textarea class="bind-code" mode="text/html">
+    <div class="row vertical-align-bottom grey" style="height: 100px;">
+      <div class="col-20 red">
+        col-20
+      </div>
+    </div>
+    <br>
+  </textarea>
+  <br />
+  <p>
+    See this good example using <code>row</code> and <code>horizontal-align-left</code>.
+  </p>
+  <textarea class="bind-code" mode="text/html">
+    <div class="row horizontal-align-left grey">
+      <div class="col-20 red">
+        col-20
+      </div>
+    </div>
+    <br>
+  </textarea>
+  <br />
+  <p>
+    See this good example using <code>row</code> and <code>horizontal-align-center</code>.
+  </p>
+  <textarea class="bind-code" mode="text/html">
+    <div class="row horizontal-align-center grey">
+      <div class="col-20 red">
+        col-20
+      </div>
+    </div>
+    <br>
+  </textarea>
+  <br />
+  <p>
+    See this good example using <code>row</code> and <code>horizontal-align-right</code>.
+  </p>
+  <textarea class="bind-code" mode="text/html">
+    <div class="row horizontal-align-right grey">
+      <div class="col-20 red">
+        col-20
+      </div>
+    </div>
+    <br>
+  </textarea>
+  <br />
+  <p>
+    See this good example using <code>row</code>, <code>horizontal-align-right</code> and <code>vertical-align-center</code>.
+    <br /> You can customize all classes of horizontal-align-X and vertical-align-Y.
+  </p>
+  <textarea class="bind-code" mode="text/html">
+    <div class="row horizontal-align-right vertical-align-center grey" style="height: 100px;">
+      <div class="col-20 red">
+        col-20
+      </div>
+    </div>
+    <br>
+  </textarea>
+  <br />
+  <p>
+    See this good example using <a href="#header">header</a>, <a href="#cover">cover</a> and <a href="#list">list</a> components.
+  </p>
+  <textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div" height-preview="550px">
+    <body class="has-header grey-200">
+      <div class="header blue-grey-900">
+        <div class="left">
+          <button class="icon ion-navicon"></button>
+        </div>
+        <div class="title">
+          Angelina Jolie
+        </div>
+        <div class="right">
+          <button class="icon ion-android-search"></button>
+          <button class="icon ion-android-more-vertical"></button>
+        </div>
+      </div>
+      <div class="cover without-padding" style="background-image:url(/img/tombraider1.jpg)">
+        <div class="space-big"></div>
+        <div class="space-huge"></div>
+        <div class="list gradient without-border">
+          <div class="item space-small row text-white align-center">
+            <div class="col">
+              <span class="text-big text-bold">75</span>
+              <p class="text-small text-light text-grey-400">MOVIES</p>
+            </div>
+            <div class="col">
+              <span class="text-big text-bold">37K</span>
+              <p class="text-small text-light text-grey-400">FOLLOWERS</p>
+            </div>
+            <div class="col">
+              <span class="text-big text-bold">265</span>
+              <p class="text-small text-light text-grey-400">FOLLOWING</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-55 cover radius margin without-padding" style="background-image:url(/img/scene1.jpg)">
+          <div class="right text-small padding text-red">
+            <i class="icon ion-heart"></i> 233
+          </div>
+          <div class="space-huge"></div>
+          <div class="space-big"></div>
+          <div class="bottom gradient padding radius">
+            <h1 class="text-white text-small">Cruel scene in Maleficent</h1>
+          </div>
+        </div>
+        <div class="col cover radius margin without-padding" style="background-image:url(/img/scene3.jpg)">
+          <div class="right text-small padding text-red">
+            <i class="icon ion-heart"></i> 55
+          </div>
+          <div class="space-huge"></div>
+          <div class="space-big"></div>
+          <div class="bottom gradient padding radius">
+            <h1 class="text-white text-small">Good scene</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row padding without-padding-top">
+        <div class="col cover radius without-padding" style="background-image:url(/img/scene4.png)">
+          <div class="right text-small padding text-red">
+            <i class="icon ion-heart"></i> 876
+          </div>
+          <div class="space-huge"></div>
+          <div class="space-big"></div>
+          <div class="bottom gradient padding radius">
+            <h1 class="text-white text-small">Meet the Badass Women</h1>
+          </div>
+        </div>
+      </div>
+    </body>
+  </textarea>
+  <a href="https://github.com/MobileUI/components/tree/master/grid/index.html" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>
 </div><div class="content-doc-reader">
     <h2 class="title-doc" id="jquery">jQuery</h2>
     <p>
