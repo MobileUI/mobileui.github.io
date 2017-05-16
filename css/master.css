@@ -185,6 +185,9 @@ a.show-doc {
 .content p.text-small {
   font-size: 14px;
 }
+.content .result p {
+  font-size: 14px;
+}
 pre, .CodeMirror {
   padding: 20px;
   background-color: #f2f2f2;
