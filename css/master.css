@@ -15,6 +15,10 @@ body {
 ol, ul {
     list-style: none;
 }
+.content-doc-reader {
+  display: inline-block;
+  width: 100%;
+}
 .content-doc-reader a[target="_blank"] {
   opacity: 0.8;
   transition: .1s ease-in-out;
@@ -128,6 +132,7 @@ a.show-doc {
   width: 280px;
   overflow: auto;
   padding: 50px;
+  padding-top: 30px;
 }
 .menuland li {
   font-size: 16px;
