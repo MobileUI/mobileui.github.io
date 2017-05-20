@@ -194,27 +194,6 @@ $(document).ready(function(){
 
 })
 
-
-window.openMenuLand = function(m){
-  var m = document.getElementById(m);
-  if(m.className.indexOf('menu') >= 0 && m.className.indexOf('open') < 0) {
-    var e = document.createElement('div');
-    e.className = 'backdrop backdrop-menu';
-    $(m).parent().append(e)
-    m.className += ' open';
-    setTimeout(function(){
-      e.className += ' show';
-    });
-    e.addEventListener('click', function(evt){
-      m.className = m.className.replace('open','');
-      e.className = e.className.replace('show','');
-      setTimeout(function(){
-        e.parentNode.removeChild(e);
-      }, 500)
-    }, false);
-  }
-}
-
 window.showPreview = function(e, id){
   $(e).parent().find('.border-green').removeClass('border-green');
   $(e).addClass('border-green');
