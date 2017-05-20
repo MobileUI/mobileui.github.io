@@ -1,6 +1,9 @@
 var theme = 'default'
 var mode = 'text/html'
 var idGenerate = 100
+
+SO.code=1;
+
 $(document).ready(function(){
   var animeBanner = function(){
     $('.hero-cards').clearQueue().stop().animate({ marginTop: "0" }, 1000, function() {
