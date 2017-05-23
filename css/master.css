@@ -259,6 +259,9 @@ pre, .CodeMirror {
 .header {
   position: inherit;
 }
+.footer {
+  position: absolute;
+}
 .header.header-absolute {
   position: absolute;
   max-width: 400px;

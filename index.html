@@ -526,7 +526,7 @@
       <span class="tooltiptext">The dependencies will be installed together with this module</span>
     </div>
     <pre>mobileui install header</pre>
-    <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr><tr><td><code>header </code></td><td>Create a fixed bar at the top of the page.</td></tr><tr><td><code>bottom </code></td><td>Create a fixed bar at the bottom of the page.</td></tr><tr><td><code>sub </code></td><td>If used with <code>header</code> create a fixed sub-bar at the top of the page, if using with <code>bottom</code> creates a fixed sub-bar at the bottom.</td></tr><tr><td><code>has-header </code></td><td>Used in the parent element of the <code>header</code>, or body element, to define that the page uses <code>header</code>.</td></tr><tr><td><code>has-sub-header </code></td><td>Used in the parent element of the <code>header</code> and <code>sub</code>, or body element, to define that the page uses <code>sub</code>.</td></tr><tr><td><code>has-footer </code></td><td>Used in the parent element of the <code>header</code> and <code>bottom</code>, or body element, to define that the page uses <code>header</code> in bottom.</td></tr><tr><td><code>has-sub-footer </code></td><td>Used in the parent element of the <code>header</code> with <code>sub</code> and <code>bottom</code>, or body element, to define that the page uses <code>sub</code> in bottom.</td></tr><tr><td><code>title </code></td><td>Create a title in the header, you can just use h1 element.</td></tr><tr><td><code>icon-badge </code></td><td>Create a floating badge next to an icon.</td></tr></table></div>
+    <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr><tr><td><code>header </code></td><td>Create a fixed bar at the top of the page.</td></tr><tr><td><code>footer </code></td><td>Create a fixed bar at the bottom of the page.</td></tr><tr><td><code>sub </code></td><td>If used with <code>header</code> create a fixed sub-bar at the top of the page, if using with <code>footer</code> creates a fixed sub-bar at the bottom.</td></tr><tr><td><code>has-header </code></td><td>Used in the parent element of the <code>header</code>, or body element, to define that the page uses <code>header</code>.</td></tr><tr><td><code>has-sub-header </code></td><td>Used in the parent element of the <code>header</code> and <code>sub</code>, or body element, to define that the page uses <code>sub</code>.</td></tr><tr><td><code>has-footer </code></td><td>Used in the parent element of the <code>header</code> and <code>footer</code>, or body element, to define that the page uses <code>header</code> in bottom.</td></tr><tr><td><code>has-sub-footer </code></td><td>Used in the parent element of the <code>header</code> with <code>sub</code> and <code>bottom</code>, or body element, to define that the page uses <code>sub</code> in bottom.</td></tr><tr><td><code>title </code></td><td>Create a title in the header, you can just use h1 element.</td></tr><tr><td><code>icon-badge </code></td><td>Create a floating badge next to an icon.</td></tr></table></div>
     <p>You can use all features the <a href="#base">base</a> MobileUI in this component.</p>
 
 
@@ -596,12 +596,12 @@
 </div>
 <img src="/img/city.jpg" /></textarea>
   <p>
-  If you don't use transparent header you need add class <code>has-header</code> in your body or div for top position add margin. For this example the component <a href="#list">list</a> was used too.
+    If you don't use transparent header you need add class <code>has-header</code> in your <code>content</code> or div for top position add margin. For this example the component <a href="#list">list</a> was used too.
   </p>
   <p>For this example you need to install the following components:</p>
   <pre>mobileui install header list</pre>
 <textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div">
-<body class="has-header pink-50 padding">
+<body class="pink-50">
   <div class="header pink">
     <div class="left">
       <button class="icon ion-android-arrow-back"></button>
@@ -612,20 +612,22 @@
     <div class="right">
       <button class="icon ion-person-add"></button>
     </div>
-    </div>
+  </div>
+  <div class="content has-header padding">
     <p>List of contacts.</p>
     <div class="list white">
-    <div class="item">
-      <h2>Fábio Rogério</h2>
-      <p>fabio.rogerio@mail.com</p>
-    </div>
-    <div class="item">
-      <h2>Silva José</h2>
-      <p>silva.jose@mail.com</p>
-    </div>
-    <div class="item">
-      <h2>Rosangela Oliveira</h2>
-      <p>rosangela.oliveira@mail.com</p>
+      <div class="item">
+        <h2>Fábio Rogério</h2>
+        <p>fabio.rogerio@mail.com</p>
+      </div>
+      <div class="item">
+        <h2>Silva José</h2>
+        <p>silva.jose@mail.com</p>
+      </div>
+      <div class="item">
+        <h2>Rosangela Oliveira</h2>
+        <p>rosangela.oliveira@mail.com</p>
+      </div>
     </div>
   </div>
 </body></textarea>
@@ -668,13 +670,11 @@
 <p>Content here.</p>
 </body></textarea>
   <p>
-    You can create a header in bottom of screen, just add class <code>bottom</code>.
-    In anothers UIKIT the name of this component is footer, becase footers are regions at
-    the bottom of a screen that can contain various types of content.
+    You can create a header in bottom of screen, just add class <code>footer</code>.
   </p>
 <textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div" height-preview="400px">
 <body class="has-footer has-sub-footer grey-50 padding">
-  <div class="header bottom green-900">
+  <div class="footer green-900">
     <div class="right">
       <button class="icon ion-gear-b"></button>
     </div>
@@ -682,7 +682,7 @@
        Device connected
     </div>
     </div>
-    <div class="header bottom sub green-800">
+    <div class="footer sub green-800">
     <div class="title">
        All itens is ready!
     </div>
@@ -1304,7 +1304,7 @@
     </p>
   </div>
 </body></textarea>
-  <p>You can put your tab in bottom position and using just icon</p>
+  <p>You can put your tab in footer and using just icon</p>
 <textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div|grey-200,grey-200 body" height-preview="200px" border="true" multiplatform="true">
 <body class="padding pink-50 has-header has-footer">
   <div class="header pink">
@@ -1313,7 +1313,7 @@
     </div>
     <h1>Profile</h1>
   </div>
-  <div class="header bottom pink shadow tab">
+  <div class="footer pink shadow tab">
     <button class="icon ion-android-person active" onclick="openTab('myTabAbout')">About</button>
     <button class="icon ion-android-list" onclick="openTab('myTabEvents')">Events</button>
     <button class="icon ion-android-chat" onclick="openTab('myTabMessages')">Messages</button>
@@ -2265,48 +2265,48 @@ document.addEventListener('closeMenu', function(e){
 </body></textarea>
     <p>For the example above we have the <code>contacts</code> page:</p>
 <textarea class="bind-just-code" mode="text/html">
-<div class="page has-header">
+<div class="page">
   <div class="header blue">
     <div class="left">
       <button class="icon ion-ios-arrow-back" onclick="backPage()"></button>
     </div>
     <h1 class="title align-center">Contacts</h1>
-    <div class="right">
-      <button class="icon ion-plus-circled"></button>
+  </div>
+  <div class="content has-header">
+    <div class="list">
+      <div class="item" onclick="openPage('contact', {name:'Jeanette Fletcher'}, functionOpenContact)">
+        <img class="avatar left" src="/img/33.jpg">
+        <h2>Jeanette Fletcher</h2>
+        <p>jeanette.fletcher15@example.com</p>
+      </div>
+      <div class="item" onclick="openPage('contact', {name:'Jack Oliver'}, functionOpenContact)">
+        <img class="avatar left" src="/img/53.jpg">
+        <h2>Jack Oliver</h2>
+        <p>jack.oliver@example.com</p>
+      </div>
+      <div class="item" onclick="openPage('contact', {name:'Carter hudson'}, functionOpenContact)">
+        <img class="avatar left" src="/img/96.jpg">
+        <h2>Carter hudson</h2>
+        <p>carter.hudson17@example.com</p>
+      </div>
     </div>
   </div>
-  <div class="list">
-    <div class="item" onclick="openPage('contact', {name:'Jeanette Fletcher'}, functionOpenContact)">
-      <img class="avatar left" src="/img/33.jpg">
-      <h2>Jeanette Fletcher</h2>
-      <p>jeanette.fletcher15@example.com</p>
-    </div>
-    <div class="item" onclick="openPage('contact', {name:'Jack Oliver'}, functionOpenContact)">
-      <img class="avatar left" src="/img/53.jpg">
-      <h2>Jack Oliver</h2>
-      <p>jack.oliver@example.com</p>
-    </div>
-    <div class="item" onclick="openPage('contact', {name:'Carter hudson'}, functionOpenContact)">
-      <img class="avatar left" src="/img/96.jpg">
-      <h2>Carter hudson</h2>
-      <p>carter.hudson17@example.com</p>
-    </div>
-  </div>
-</div>
-</textarea>
+</div></textarea>
     <p>When you click on an item in the list the <code>contact</code> page appears:</p>
 <textarea class="bind-just-code" mode="text/html">
-<div class="page has-header">
+<div class="page">
   <div class="header blue">
     <div class="left">
       <button class="icon ion-ios-arrow-back" onclick="backPage()"></button>
     </div>
     <h1 class="title align-center">Contact</h1>
   </div>
-  <div class="list">
-    <div class="item">
-      <label>NAME</label>
-      <input id="name" type="text" value="Jeanette Fletcher" readonly>
+  <div class="content has-header">
+    <div class="list">
+      <div class="item">
+        <label>NAME</label>
+        <input id="name" type="text" value="Jeanette Fletcher" readonly>
+      </div>
     </div>
   </div>
 </div></textarea>
@@ -2445,7 +2445,7 @@ document.addEventListener('backPage', function(e){
 </div><div class="content-doc-reader">
     <h2 class="title-doc" id="mobileuijs">MobileUI.JS</h2>
     <p>
-      This component is a simple library for manipulating data and states of elements in JavaScript.
+      This component is a simple library for manipulating data, states of elements and Ajax request in JavaScript.
     </p>
     <p>
       For use this components you need install with command:
@@ -2455,6 +2455,10 @@ document.addEventListener('backPage', function(e){
       The most important functionality is the observation in objects and arrays.
       For use you need add attribute <code>data</code> in your HTML element with the name of a <code>object</code> or <code>array</code>.
       This causes an element to be changed if the object or array is modified and you can display using a escape expression <code>${}</code>
+    </p>
+    <p>
+      MobileUI.js embed the lib <a href="http://visionmedia.github.io/superagent/" target="_blank">SuperAgent</a> for call ajax request, because it is light-weight progressive
+      ajax API crafted for flexibility, readability, and a low learning curve.
     </p>
     <p>
       In this example a have a <code>object</code> with attributes of user:
@@ -2573,7 +2577,7 @@ var users = [
       <table class="tableDoc">
         <tbody>
           <tr>
-            <th>Class</th>
+            <th>Function</th>
             <th>Description</th>
           </tr>
           <tr>
@@ -2587,6 +2591,10 @@ var users = [
           <tr>
             <td><code>MobileUI.clearForm('idElement')</code></td>
             <td>Clear and reset inputs within the entered element.</td>
+          </tr>
+          <tr>
+            <td><code>MobileUI.ajax</code></td>
+            <td>Ajax request flexibility, readability, and a low learning curve using <a href="http://visionmedia.github.io/superagent/" target="_blank">SuperAgent</a>.</td>
           </tr>
           <tr>
             <td><code>MobileUI.show('idElement')</code></td>
@@ -2604,9 +2612,110 @@ var users = [
             <td><code>MobileUI.focus('idElement')</code></td>
             <td>Focus on an element, if input to keyboard is displayed.</td>
           </tr>
+          <tr>
+            <td><code>MobileUI.disable('idElement')</code></td>
+            <td>Disable an element and your children's.</td>
+          </tr>
+          <tr>
+            <td><code>MobileUI.enable('idElement')</code></td>
+            <td>Enable an element and your children's.</td>
+          </tr>
+          <tr>
+            <td><code>document.addEventListener('dataUpdated')</code></td>
+            <td>
+              Fire event when data is updated, you can check whats is data in the event.detail, ex:<br>
+              <code>
+                document.addEventListener('dataUpdated', function(event){
+                  //event.detail.dataKey
+                  //event.detail.dataValue
+                })
+              </code>
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
+    <p>
+      See this example using ajax request.
+    </p>
+<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div|grey-200,grey-200 body" height-preview="600px" border="true" exec-mobileui-bind="true">
+<body class="padding grey-200">
+  <div class="list white" id="formUserGitHub">
+    <div class="item icon ion-at">
+      <input type="text" id="github_username" placeholder="Enter GitHub username">
+    </div>
+    <div class="item">
+      <button class="blue full" onclick="getProfile()">GET PROFILE</button>
+    </div>
+  </div>
+  <p class="text-red" data="infos">${message}</p>
+  <div class="hidden" id="listProfileGitHub">
+    <div class="list" data="userGitHub">
+      <div class="item">
+        <div class="left">
+          <img class="avatar circle" src="${avatar_url}">
+        </div>
+        <h2>${name}</h2>
+        <p>@${login}</p>
+      </div>
+      <div class="item">
+        <p>${bio}</p>
+      </div>
+    </div>
+  </div>
+  <div class="hidden" id="listRepositoriesGitHub">
+    <div class="list">
+      <div class="item grey-900">
+        REPOSITORIES
+        <span class="black radius padding right" data="infos">
+          ${totalRepositories}
+        </span>
+      </div>
+      <a href="${html_url}" target="_blank" class="item" data="repositoriesGitHub">
+        <h2 class="text-strong">${name}</h2>
+        <p>${html_url}</p>
+      </a>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var userGitHub = {};
+    var repositoriesGitHub = [];
+    var infos = {};
+
+    function getProfile(){
+      var obj = MobileUI.objectByForm('formUserGitHub');
+      MobileUI.disable('formUserGitHub');
+      MobileUI.ajax.get('https://api.github.com/users/' + obj.github_username).end(resultAjaxProfile)
+    }
+
+    function getRepositories(repoUrl){
+      MobileUI.ajax.get(repoUrl).end(resultAjaxRepositories)
+    }
+
+    function resultAjaxProfile(err, res){
+      MobileUI.enable('formUserGitHub');
+      if(err) {
+        infos.message = "Sorry, get profile not work now :(";
+      } else {
+        userGitHub = JSON.parse(res.text);
+        MobileUI.show('listProfileGitHub');
+        if(userGitHub.repos_url){
+          getRepositories(userGitHub.repos_url);
+        }
+      }
+    }
+
+    function resultAjaxRepositories(err, res){
+      if(!err) {
+        repositoriesGitHub = JSON.parse(res.text);
+        MobileUI.show('listRepositoriesGitHub');
+        infos.totalRepositories = repositoriesGitHub.length;
+      }
+    }
+
+
+  </script>
+</body></textarea>
     <a href="https://github.com/MobileUI/components/tree/master/mobileuijs/index.html" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>
 </div><div class="content-doc-reader">
     <h2 class="title-doc" id="jquery">jQuery</h2>
