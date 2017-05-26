@@ -435,11 +435,20 @@
       </ul>
       </section>
 
-      <section class="color-group">
+      <section class="color-group" style="background-image:url(/img/roller.jpg);background-size:cover">
       <ul>
       <li class="color" style="background-color: #000000;">black</li>
       <li class="color dark" style="background-color: #ffffff;">white</li>
-      <li class="color dark" style="background-color: #ffffff;">transparent</li>
+      <li class="color" style="background-color: rgba(0,0,0,0.9);">black-opacity-90</li>
+      <li class="color dark" style="background-color: rgba(255,255,255,0.9);">white-opacity-90</li>
+      <li class="color" style="background-color: rgba(0,0,0,0.8);">black-opacity-70</li>
+      <li class="color dark" style="background-color: rgba(255,255,255,0.7);">white-opacity-70</li>
+      <li class="color" style="background-color: rgba(0,0,0,0.7);">black-opacity-50</li>
+      <li class="color dark" style="background-color: rgba(255,255,255,0.5);">white-opacity-50</li>
+      <li class="color" style="background-color: rgba(0,0,0,0.6);">black-opacity-30</li>
+      <li class="color dark" style="background-color: rgba(255,255,255,0.3);">white-opacity-30</li>
+      <li class="color" style="background-color: rgba(0,0,0,0.5);">black-opacity-10</li>
+      <li class="color dark" style="background-color: rgba(255,255,255,0.1);">white-opacity-10</li>
       </ul>
       </section>
     </div>
@@ -868,7 +877,7 @@
   </div>
 </div>
 <p>Radius input</p>
-<div class="list without-border">
+<div class="list no-border">
   <div class="item radius icon ion-person grey-200">
     <input type="text" placeholder="Enter your name">
   </div>
@@ -896,7 +905,7 @@
   <div class="space"></div>
   <div class="row">
     <div class="col-90 col-center">
-      <div class="list without-border opacity-60">
+      <div class="list no-border opacity-60">
         <div class="item icon ion-android-mail border-grey border-bottom">
           <input class="placeholder-white text-white" type="email" placeholder="Enter your email">
         </div>
@@ -1101,7 +1110,7 @@
     <span class="tooltiptext">The dependencies will be installed together with this module</span>
     </div>
     <pre>mobileui install list</pre>
-    <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr><tr><td><code>list </code></td><td>Define an element as list. This feature depends on the <code>item</code> to function properly.</td></tr><tr><td><code>item </code></td><td>Define an element as item. This feature depends on the <code>list</code> to function properly.</td></tr><tr><td><code>space-small </code></td><td>Define a small space between the top and bottom elements.</td></tr><tr><td><code>without-border </code></td><td>Define that a list or an item has no borders.</td></tr><tr><td><code>border-bottom </code></td><td>Define that a list or an item has a bottom border.</td></tr><tr><td><code>full </code></td><td>Define an item without internal spaces.</td></tr><tr><td><code>avatar </code></td><td>Set a fixed size for an image.</td></tr><tr><td><code>avatar-badge </code></td><td>Set a floating badge above the image.</td></tr><tr><td><code>border-big </code></td><td>Add big border in item or element.</td></tr></table></div>
+    <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr><tr><td><code>list </code></td><td>Define an element as list. This feature depends on the <code>item</code> to function properly.</td></tr><tr><td><code>item </code></td><td>Define an element as item. This feature depends on the <code>list</code> to function properly.</td></tr><tr><td><code>space-small </code></td><td>Define a small space between the top and bottom elements.</td></tr><tr><td><code>no-border </code></td><td>Define that a list or an item has no borders.</td></tr><tr><td><code>border-bottom </code></td><td>Define that a list or an item has a bottom border.</td></tr><tr><td><code>full </code></td><td>Define an item without internal spaces.</td></tr><tr><td><code>avatar </code></td><td>Set a fixed size for an image.</td></tr><tr><td><code>avatar-badge </code></td><td>Set a floating badge above the image.</td></tr><tr><td><code>border-big </code></td><td>Add big border in item or element.</td></tr></table></div>
     <p>You can use all features the <a href="#base">base</a> MobileUI in this component.</p>
 
 <textarea class="bind-code" mode="text/html">
@@ -1629,7 +1638,7 @@
         <span class="tooltiptext">The dependencies will be installed together with this module</span>
       </div>
       <pre>mobileui install cover</pre>
-      <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr><tr><td><code>cover </code></td><td>Define that an element has a <code>background-image</code> and must cover the space required.</td></tr><tr><td><code>without-padding </code></td><td>Remove space inner the cover.</td></tr><tr><td><code>avatar </code></td><td>Limit the size of an image and add large border.</td></tr><tr><td><code>float-bottom-left </code></td><td>Float an element in the footer on the left.</td></tr><tr><td><code>float-bottom-right </code></td><td>Float an element in the footer on the right.</td></tr><tr><td><code>gradient </code></td><td>Set a gradient effect from black to transparent in the background of an element.</td></tr><tr><td><code>blend-multiply </code></td><td>Used when a <code>background-image</code> is set to apply the multiply effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-multiply">multiply blend mode</a></td></tr><tr><td><code>blend-screen </code></td><td>Used when a <code>background-image</code> is set to apply the screen effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-screen">screen blend mode</a></td></tr><tr><td><code>blend-overlay </code></td><td>Used when a <code>background-image</code> is set to apply the overlay effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-overlay">overlay blend mode</a></td></tr><tr><td><code>blend-darken </code></td><td>Used when a <code>background-image</code> is set to apply the darken effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-darken">darken blend mode</a></td></tr><tr><td><code>blend-lighten </code></td><td>Used when a <code>background-image</code> is set to apply the lighten effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-lighten">lighten blend mode</a></td></tr><tr><td><code>blend-color-dodge </code></td><td>Used when a <code>background-image</code> is set to apply the color-dodge effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-color-dodge">color-dodge blend mode</a></td></tr><tr><td><code>blend-color-burn </code></td><td>Used when a <code>background-image</code> is set to apply the color-burn effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-color-burn">color-burn blend mode</a></td></tr><tr><td><code>blend-hard-light </code></td><td>Used when a <code>background-image</code> is set to apply the hard-light effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-hard-light">hard-light blend mode</a></td></tr><tr><td><code>blend-soft-light </code></td><td>Used when a <code>background-image</code> is set to apply the soft-light effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-soft-light">soft-light blend mode</a></td></tr><tr><td><code>blend-luminosity </code></td><td>Used when a <code>background-image</code> is set to apply the luminosity effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-luminosity">luminosity blend mode</a></td></tr></table></div>
+      <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr><tr><td><code>cover </code></td><td>Define that an element has a <code>background-image</code> and must cover the space required.</td></tr><tr><td><code>no-padding </code></td><td>Remove space inner the cover.</td></tr><tr><td><code>avatar </code></td><td>Limit the size of an image and add large border.</td></tr><tr><td><code>float-bottom-left </code></td><td>Float an element in the footer on the left.</td></tr><tr><td><code>float-bottom-right </code></td><td>Float an element in the footer on the right.</td></tr><tr><td><code>gradient </code></td><td>Set a gradient effect from black to transparent in the background of an element.</td></tr><tr><td><code>blend-multiply </code></td><td>Used when a <code>background-image</code> is set to apply the multiply effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-multiply">multiply blend mode</a></td></tr><tr><td><code>blend-screen </code></td><td>Used when a <code>background-image</code> is set to apply the screen effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-screen">screen blend mode</a></td></tr><tr><td><code>blend-overlay </code></td><td>Used when a <code>background-image</code> is set to apply the overlay effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-overlay">overlay blend mode</a></td></tr><tr><td><code>blend-darken </code></td><td>Used when a <code>background-image</code> is set to apply the darken effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-darken">darken blend mode</a></td></tr><tr><td><code>blend-lighten </code></td><td>Used when a <code>background-image</code> is set to apply the lighten effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-lighten">lighten blend mode</a></td></tr><tr><td><code>blend-color-dodge </code></td><td>Used when a <code>background-image</code> is set to apply the color-dodge effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-color-dodge">color-dodge blend mode</a></td></tr><tr><td><code>blend-color-burn </code></td><td>Used when a <code>background-image</code> is set to apply the color-burn effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-color-burn">color-burn blend mode</a></td></tr><tr><td><code>blend-hard-light </code></td><td>Used when a <code>background-image</code> is set to apply the hard-light effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-hard-light">hard-light blend mode</a></td></tr><tr><td><code>blend-soft-light </code></td><td>Used when a <code>background-image</code> is set to apply the soft-light effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-soft-light">soft-light blend mode</a></td></tr><tr><td><code>blend-luminosity </code></td><td>Used when a <code>background-image</code> is set to apply the luminosity effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-luminosity">luminosity blend mode</a></td></tr></table></div>
       <p>You can use all features the <a href="#base">base</a> MobileUI in this component.</p>
 <textarea class="bind-code" mode="text/html">
 <div class="cover align-center" style="background-image:url(/img/aurora-boreal-rosa.jpg)">
@@ -1752,7 +1761,7 @@
     </p>
 <textarea class="bind-code" mode="text/html">
 <div class="list radius shadow">
-  <div class="item without-border">
+  <div class="item no-border">
     <div class="left">
       <img class="avatar circle" src="/img/65.jpg">
     </div>
@@ -1762,13 +1771,13 @@
       2h <i class="icon ion-android-time"></i>
     </div>
   </div>
-  <div class="item without-border cover radius" style="background-image:url(/img/bike.png)">
+  <div class="item no-border cover radius" style="background-image:url(/img/bike.png)">
     <div class="text-small gradient bottom padding text-white text-light radius">
       <span class="amber-300 radius padding text-big text-strong">$198</span>
       Great for casual weekend outings :)
     </div>
   </div>
-  <div class="item without-border row align-center">
+  <div class="item no-border row align-center">
     <div class="col text-red">
       <i class="icon ion-heart"></i> 245
     </div>
@@ -1818,7 +1827,7 @@
 <textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div|grey-200,grey-200 body" height-preview="400px" border="true" multiplatform="true">
 <body class="padding grey-200">
   <div class="menu white" id="myMenu">
-    <div class="list without-border">
+    <div class="list no-border">
       <div class="item blue">
         <div class="left">
           <img class="avatar circle" src="/img/80.jpg">
@@ -1878,7 +1887,7 @@
       <h1 class="text-teal-300">Carter Hudson</h1>
       <p class="text-grey">carter.hudson@mail.com</p>
     </div>
-    <div class="list without-border">
+    <div class="list no-border">
       <a class="item space-small">
         <div class="left">
           <i class="icon ion-ios-heart-outline grey-300"></i>
@@ -1935,7 +1944,7 @@
     </div>
   </div>
   <div class="space"></div>
-  <div class="list white without-border radius shadow">
+  <div class="list white no-border radius shadow">
     <div class="item">
       <div class="left">
         <img class="avatar radius" src="/img/33.jpg" />
@@ -2237,10 +2246,10 @@ document.addEventListener('closeMenu', function(e){
           <button class="icon ion-android-more-vertical"></button>
         </div>
       </div>
-      <div class="cover without-padding" style="background-image:url(/img/tombraider1.jpg)">
+      <div class="cover no-padding" style="background-image:url(/img/tombraider1.jpg)">
         <div class="space-big"></div>
         <div class="space-huge"></div>
-        <div class="list gradient without-border">
+        <div class="list gradient no-border">
           <div class="item space-small row text-white align-center">
             <div class="col">
               <span class="text-big text-bold">75</span>
@@ -2258,7 +2267,7 @@ document.addEventListener('closeMenu', function(e){
         </div>
       </div>
       <div class="row">
-        <div class="col-55 cover radius margin without-padding" style="background-image:url(/img/scene1.jpg)">
+        <div class="col-55 cover radius margin no-padding" style="background-image:url(/img/scene1.jpg)">
           <div class="right text-small padding text-red">
             <i class="icon ion-heart"></i> 233
           </div>
@@ -2268,7 +2277,7 @@ document.addEventListener('closeMenu', function(e){
             <h1 class="text-white text-small">Cruel scene in Maleficent</h1>
           </div>
         </div>
-        <div class="col cover radius margin without-padding" style="background-image:url(/img/scene3.jpg)">
+        <div class="col cover radius margin no-padding" style="background-image:url(/img/scene3.jpg)">
           <div class="right text-small padding text-red">
             <i class="icon ion-heart"></i> 55
           </div>
@@ -2279,8 +2288,8 @@ document.addEventListener('closeMenu', function(e){
           </div>
         </div>
       </div>
-      <div class="row padding without-padding-top">
-        <div class="col cover radius without-padding" style="background-image:url(/img/scene4.png)">
+      <div class="row padding no-padding-top">
+        <div class="col cover radius no-padding" style="background-image:url(/img/scene4.png)">
           <div class="right text-small padding text-red">
             <i class="icon ion-heart"></i> 876
           </div>
