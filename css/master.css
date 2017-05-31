@@ -16,6 +16,12 @@ body {
 ol, ul {
     list-style: none;
 }
+.content {
+  position: inherit;
+  width: 100%;
+  max-height: 600px;
+  overflow: auto;
+}
 .content-doc-reader {
   display: inline-block;
   width: 100%;
@@ -553,4 +559,9 @@ code {
 }
 .float-bottom-right, .float-bottom-left {
   position: absolute !important;
+}
+.header p, .footer p {
+  padding-left: 10px;
+  margin: 0;
+  margin-top: -4px;
 }

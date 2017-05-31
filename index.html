@@ -541,9 +541,7 @@
 
 <textarea class="bind-code" mode="text/html">
 <div class="header purple">
-  <div class="title">
-   Application title
-  </div>
+  <h1>Application title</h1>
 </div></textarea>
 
   <p>
@@ -551,9 +549,7 @@
   </p>
 <textarea class="bind-code" mode="text/html">
 <div class="header red">
-  <div class="title align-center">
-   Application title in center
-  </div>
+  <h1 class="align-center">Application title in center</h1>
 </div></textarea>
 
   <p>
@@ -564,9 +560,7 @@
   <div class="left">
     <button class="icon ion-navicon-round"></button>
   </div>
-  <div class="title">
-    Application title
-  </div>
+  <h1>Application title</h1>
   <div class="right">
     <button class="icon ion-search"></button>
     <button class="icon ion-android-more-vertical"></button>
@@ -595,9 +589,7 @@
   <div class="left">
     <button class="icon ion-navicon-round"></button>
   </div>
-  <div class="title">
-    Application title
-  </div>
+  <h1>Application title</h1>
   <div class="right">
     <button class="icon ion-search"></button>
     <button class="icon ion-android-more-vertical"></button>
@@ -615,12 +607,8 @@
     <div class="left">
       <button class="icon ion-android-arrow-back"></button>
     </div>
-    <div class="title align-center">
-       Contacts
-    </div>
-    <div class="right">
-      <button class="icon ion-person-add"></button>
-    </div>
+    <h2>Contacts</h2>
+    <p>List of your contacts</p>
   </div>
   <div class="content has-header padding">
     <p>List of contacts.</p>
@@ -2682,6 +2670,16 @@ var users = [
           <tr>
             <th>Function</th>
             <th>Description</th>
+          </tr>
+          <tr>
+            <td><code>MobileUI.formatMoney(number)</code></td>
+            <td>
+              Returns a string formatted in money, you can pass the number of decimal places, the decimal separator, and the thousands separator.
+              <br>
+              Example: <br><br>
+              <code>MobileUI.formatMoney(256)</code> <br>
+              <code>MobileUI.formatMoney(1256, 2, ',','.')</code>
+            </td>
           </tr>
           <tr>
             <td><code>MobileUI.objectByForm('idElement')</code></td>
