@@ -4,6 +4,10 @@ var idGenerate = 100
 
 if(window.SO) {
   window.SO.code = 1;
+} else {
+  window.SO = {
+    code : 1
+  }
 }
 
 $(document).ready(function(){
@@ -269,11 +273,14 @@ window.openPageDemo = function(id, p, params, callback){
       var div = document.createElement('div')
       div.setAttribute('class','box-block')
       div.setAttribute('id',p)
-      div.innerHTML = page
+      div.innerHTML = page;
       body.appendChild(div)
       window.PAGE.handePage++
       var firstStyle = 'z-index:'+window.PAGE.handePage
       var secondStyle = ';transform: translateY(0px);will-change: transform, -webkit-transform, opacity;transition-duration: 280ms;transition-timing-function: cubic-bezier(0.36,0.66,0.04,1);'
+      if(SO.code === 2){
+        secondStyle = ';transform: translateX(0px);transition-duration: 280ms;'
+      }
       var newStyle = document.getElementById(p).getElementsByClassName('page')[0].getAttribute('style')
       if(newStyle) {
         newStyle += ' '+firstStyle + secondStyle
@@ -285,20 +292,33 @@ window.openPageDemo = function(id, p, params, callback){
         window.dispatch(callback, [params]);
       }
       var newClass = document.getElementById(p).getElementsByClassName('page')[0].getAttribute('class')
-      newClass += ' show'
-      setTimeout(function(){
-        document.getElementById(p).getElementsByClassName('page')[0].setAttribute('class',newClass)
+      newClass += ' show';
+      var validOpenPage = function(){
         setTimeout(function(){
-          var style = document.getElementById(p).getElementsByClassName('page')[0].getAttribute('style')
-          style = style.replace(secondStyle,'')
-          document.getElementById(p).getElementsByClassName('page')[0].setAttribute('style',style)
-        },280)
-      },10)
+          if(document.getElementById(p) && document.getElementById(p).querySelectorAll('.page').length){
+            showPageBind();
+          } else {
+            validOpenPage();
+          }
+        },10);
+      }
+      validOpenPage();
+      var showPageBind = function(){
+        setTimeout(function(){
+          document.getElementById(p).getElementsByClassName('page')[0].setAttribute('class',newClass)
+          setTimeout(function(){
+            var style = document.getElementById(p).getElementsByClassName('page')[0].getAttribute('style')
+            style = style.replace(secondStyle,'')
+            document.getElementById(p).getElementsByClassName('page')[0].setAttribute('style',style)
+          },280)
+        }, 100);
+      };
     }
   };
   xhttp.open("GET", p + '?cache='+new Date().getTime(), true);
   xhttp.send();
 }
+
 window.openPopoverLand = function(p){
   var button = event.target;
   var rect = button.getBoundingClientRect();
@@ -337,7 +357,7 @@ window.openPopoverLand = function(p){
     })
   }
 }
-window.loading = function(message){
+window.loadingLand = function(message){
   var configLoading = {};
   if(typeof message === "object"){
     configLoading = message;
