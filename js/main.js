@@ -162,6 +162,9 @@ $(document).ready(function(){
           $('.menuland a').removeClass('active');
           $('.menuland a[href="#'+idDoc+'"]').addClass('active');
           window.history.replaceState("", document.title, '#'+idDoc);
+          console.log(idDoc)
+          ga('set', 'page', '/'+idDoc);
+          ga('send', 'pageview');
         }
       }
     });
