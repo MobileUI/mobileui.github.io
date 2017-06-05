@@ -397,5 +397,5 @@ window.loadingLand = function(message){
 
   setTimeout(function(){
     closeLoading();
-  },4000)
+  },3000)
 }
