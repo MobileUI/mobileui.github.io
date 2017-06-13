@@ -69,7 +69,7 @@
 			</ul>
     </div>
 
-    <div class="menuland font-raleway"><h1>Getting started</h1><ul><a href="#getting-started"><li>Install</li></a></ul><h1>Components</h1><ul><a href="#base"><li>Base</li></a><a href="#colors"><li>Colors</li></a><a href="#icons"><li>Icons</li></a><a href="#fonts"><li>Fonts</li></a><a href="#header"><li>Header</li></a><a href="#button"><li>Button</li></a><a href="#input"><li>Input</li></a><a href="#list"><li>List</li></a><a href="#tab"><li>Tab</li></a><a href="#card"><li>Card</li></a><a href="#badge"><li>Badge</li></a><a href="#cover"><li>Cover</li></a><a href="#menu"><li>Menu</li></a><a href="#grid"><li>Grid</li></a><a href="#page"><li>Page</li></a><a href="#popover"><li>Popover</li></a><a href="#alert"><li>Alert</li></a><a href="#loading"><li>Loading</li></a><a href="#chart-bar"><li>Chart Bar</li></a><a href="#timeline"><li>Timeline</li></a><a href="#templates"><li>Templates</li></a></ul><h1>JavaScript</h1><ul><a href="#mobileuijs"><li>MobileUI.js</li></a><a href="#jquery"><li>jQuery</li></a></ul></div><div class="content-land font-raleway"><div class="content-doc-reader">
+    <div class="menuland font-raleway"><h1>Getting started</h1><ul><a href="#getting-started"><li>Install</li></a></ul><h1>Components</h1><ul><a href="#base"><li>Base</li></a><a href="#colors"><li>Colors</li></a><a href="#icons"><li>Icons</li></a><a href="#fonts"><li>Fonts</li></a><a href="#header"><li>Header</li></a><a href="#button"><li>Button</li></a><a href="#input"><li>Input</li></a><a href="#list"><li>List</li></a><a href="#tab"><li>Tab</li></a><a href="#card"><li>Card</li></a><a href="#badge"><li>Badge</li></a><a href="#cover"><li>Cover</li></a><a href="#menu"><li>Menu</li></a><a href="#grid"><li>Grid</li></a><a href="#page"><li>Page</li></a><a href="#include"><li>Include</li></a><a href="#popover"><li>Popover</li></a><a href="#alert"><li>Alert</li></a><a href="#loading"><li>Loading</li></a><a href="#chart-bar"><li>Chart Bar</li></a><a href="#timeline"><li>Timeline</li></a><a href="#templates"><li>Templates</li></a></ul><h1>JavaScript</h1><ul><a href="#mobileuijs"><li>MobileUI.js</li></a><a href="#jquery"><li>jQuery</li></a></ul></div><div class="content-land font-raleway"><div class="content-doc-reader">
     <h2 class="title-doc" id="getting-started">Getting started</h2>
     <p>
       MobileUI was created thinking of making your hybrid application <strong>faster</strong> and <strong>smaller</strong>, since you only install what you
@@ -2389,6 +2389,35 @@ document.addEventListener('backPage', function(e){
 })</textarea>
     <a href="https://github.com/MobileUI/components/tree/master/page/index.html" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>
 </div><div class="content-doc-reader">
+  <h2 class="title-doc" id="include">Include</h2>
+  <p>
+    This component include a external file HTML in your page.
+  </p>
+  <p>
+    For use this components you need install with command:
+  </p>
+  <pre>mobileui install include</pre>
+  <!-- _DOC_GENERATE_CSS_DOC -->
+<textarea class="bind-code" mode="text/html" replace="body,div|padding,padding body" height-preview="200px" border="true">
+<body class="padding">
+  <div include="myfile1"></div>
+  <button class="teal full radius margin-top margin-bottom" onclick="include('myFrame','myfile2')">
+    Include another file
+  </button>
+  <div id="myFrame"></div>
+</body></textarea>
+    <strong>myfile1.html</strong>
+<textarea class="bind-just-code" mode="text/html">
+<strong>This is my file</strong>
+<p>Included when load file.</p>
+<hr></textarea>
+    <strong>myfile2.html</strong>
+<textarea class="bind-just-code" mode="text/html">
+<strong>This is another file</strong>
+<p>Included by click button.</p>
+<hr></textarea>
+  <a href="https://github.com/MobileUI/components/tree/master/include/index.html" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>
+</div><div class="content-doc-reader">
   <h2 class="title-doc" id="popover">Popover</h2>
   <p>
     The Popover is a view that floats above an app’s content. Popovers provide an easy way to present or gather information from
@@ -3166,6 +3195,7 @@ var users = [
     <script type="text/javascript" src="mobileui/popover.min.js"></script>
     <script type="text/javascript" src="mobileui/alert.min.js"></script>
     <script type="text/javascript" src="mobileui/loading.min.js"></script>
+    <script type="text/javascript" src="mobileui/include.min.js"></script>
     <script type="text/javascript" src="/js/main.js"></script>
     <script type="text/javascript" src="/contact.js"></script>
     <script>
