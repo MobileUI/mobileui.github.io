@@ -20,6 +20,10 @@ body {
 ol, ul {
     list-style: none;
 }
+button.show-doc {
+  color: #2f94cf;
+    text-decoration: underline;
+}
 .content {
   position: inherit;
   width: 100%;

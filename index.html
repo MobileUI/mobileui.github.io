@@ -122,14 +122,50 @@
     </p>
     <pre>mobileui install base</pre>
     <p>And just add the class in your component to use the color, example:  </p>
-    <textarea class="bind-code" mode="text/html">
-<div class="green-50 padding">
-  Lorem ipsum <span class="text-red">dolor</span> sit amet,
-  <span class="border-blue">consectetur</span> out set
-  <span class="text-pink text-bold">adipisicing</span> elit,
-  sed do eiusmod tempor incididunt ut
-  <span class="amber-300">labore et dolore</span> magna aliqua.
-</div></textarea>
+<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div|grey-100,grey-100 body" height-preview="430px">
+<body class="grey-100">
+  <div class="header indigo">
+    <button class="left icon ion-navicon"></button>
+    <button class="right icon ion-plus-circled"></button>
+  </div>
+  <div class="content has-header">
+    <div class="row padding indigo">
+      <div class="col-25 padding">
+        <img class="avatar circle" src="/img/33.jpg" />
+      </div>
+      <div class="col padding">
+        <h1 class="text-big text-light">Jeanette Fletcher</h1>
+        <p class="text-blue-200">jeanette.fletcher15@example.com</p>
+      </div>
+    </div>
+    <div class="row align-center">
+      <div class="col padding light-blue">
+        <h1 class="text-huge text-strong">12</h1>
+        <p>remaning tasks</p>
+      </div>
+      <div class="col padding pink-400">
+        <h1 class="text-huge text-strong">32</h1>
+        <p>completed tasks</p>
+      </div>
+    </div>
+    <div class="list no-border">
+      <div class="item border-bottom text-grey-300">
+        <h1 class="text-grey-600 text-light">Finish landing page concept</h1>
+        <span class="purple radius padding text-small">design</span>
+        <span class="blue radius padding text-small">freelance</span>
+        <span class="red radius padding text-small">web</span>
+        <i class="right icon ion-ios-arrow-right text-grey-700 text-huge"></i>
+      </div>
+      <div class="item border-bottom text-grey-300">
+        <h1 class="text-grey-600 text-light">Design app illustrations</h1>
+        <span class="purple radius padding text-small">design</span>
+        <span class="blue radius padding text-small">freelance</span>
+        <span class="green radius padding text-small">mobile</span>
+        <i class="right icon ion-ios-arrow-right text-grey-700 text-huge"></i>
+      </div>
+    </div>
+  </div>
+</body></textarea>
 
     <h3 class="sub-title-doc">Colors MobileUI:</h3>
     <div class="color-palettes">
@@ -2416,6 +2452,9 @@ document.addEventListener('backPage', function(e){
 <strong>This is another file</strong>
 <p>Included by click button.</p>
 <hr></textarea>
+<p>
+  You can invoke callback function after include page: <code>include('myFrame','myfile', myFunctionCallback)</code>
+</p>
   <a href="https://github.com/MobileUI/components/tree/master/include/index.html" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>
 </div><div class="content-doc-reader">
   <h2 class="title-doc" id="popover">Popover</h2>
@@ -3005,16 +3044,6 @@ var users = [
             <th>Description</th>
           </tr>
           <tr>
-            <td><code>MobileUI.formatMoney(number)</code></td>
-            <td>
-              Returns a string formatted in money, you can pass the number of decimal places, the decimal separator, and the thousands separator.
-              <br>
-              Example: <br><br>
-              <code>MobileUI.formatMoney(256)</code> <br>
-              <code>MobileUI.formatMoney(1256, 2, ',','.')</code>
-            </td>
-          </tr>
-          <tr>
             <td><code>MobileUI.objectByForm('idElement')</code></td>
             <td>Returns an object with the values of the inputs found within the given element.</td>
           </tr>
@@ -3064,6 +3093,22 @@ var users = [
                   //event.detail.dataValue
                 })
               </code>
+            </td>
+          </tr>
+          <tr>
+            <td><code>MobileUI.formatMoney(number)</code></td>
+            <td>
+              Returns a string formatted in money, you can pass the number of decimal places, the decimal separator, and the thousands separator.
+              <br>
+              Example: <br><br>
+              <code>MobileUI.formatMoney(256)</code> <br>
+              <code>MobileUI.formatMoney(1256, 2, ',','.')</code>
+            </td>
+          </tr>
+          <tr>
+            <td><code>MobileUI.myFunction = function(params){}</code></td>
+            <td>
+              You can create a custom function for use in data list HTML validation, example <code>$$myFunction{par1}</code>
             </td>
           </tr>
         </tbody>
