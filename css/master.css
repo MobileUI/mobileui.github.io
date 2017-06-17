@@ -175,7 +175,20 @@ a.show-doc {
   color: rgba(0, 0, 0, 0.8);
 }
 .menuland li {
-  padding: 10px;
+  padding: 8px;
+}
+.menuland li.move-focus::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #579480;
+  position: absolute;
+  margin-left: -12px;
+  margin-top: 4px;
+}
+#searchComponent {
+  padding-left: 5px;
 }
 .menuland li:hover, .menuland a.active li {
   background-color: #7fc7af;
