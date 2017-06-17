@@ -44,7 +44,6 @@ $(document).ready(function(){
     $('.hero-card-5').clearQueue().stop();
     $('.hero-card-6').clearQueue().stop();
     $('.hero-card-7').clearQueue().stop();
-    $('.hero-card-8').clearQueue().stop();
 
     $('.hero-card-2').removeAttr('style');
     $('.hero-card-3').removeAttr('style');
@@ -52,7 +51,6 @@ $(document).ready(function(){
     $('.hero-card-5').removeAttr('style');
     $('.hero-card-6').removeAttr('style');
     $('.hero-card-7').removeAttr('style');
-    $('.hero-card-8').removeAttr('style');
     animeBanner();
   });
 
