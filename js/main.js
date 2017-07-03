@@ -506,3 +506,8 @@ window.loadingLandElement = function(e, message, position, color){
 setTimeout(function(){
   window.bindIncludeEvent();
 }, 500);
+
+function binderFire(){
+  if(ProgressCircle) ProgressCircle.bind();
+}
+setInterval(binderFire, 500);
