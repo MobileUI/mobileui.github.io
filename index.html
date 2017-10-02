@@ -69,14 +69,14 @@
 			</ul>
     </div>
 
-    <div class="menuland font-raleway"><div class="list radius grey-50"><div class="item space-small icon ion-search" id="searchComponent"><input type="text" placeholder="Search..." autofocus="autofocus"></div></div><h1>Getting started</h1><ul><a href="#getting-started" onclick="goDoc('getting-started')"><li>Install</li></a></ul><h1>Components</h1><ul><a href="#base" onclick="goDoc('base')"><li>Base</li></a><a href="#colors" onclick="goDoc('colors')"><li>Colors</li></a><a href="#icons" onclick="goDoc('icons')"><li>Icons</li></a><a href="#fonts" onclick="goDoc('fonts')"><li>Fonts</li></a><a href="#header" onclick="goDoc('header')"><li>Header</li></a><a href="#button" onclick="goDoc('button')"><li>Button</li></a><a href="#input" onclick="goDoc('input')"><li>Input</li></a><a href="#list" onclick="goDoc('list')"><li>List</li></a><a href="#tab" onclick="goDoc('tab')"><li>Tab</li></a><a href="#card" onclick="goDoc('card')"><li>Card</li></a><a href="#badge" onclick="goDoc('badge')"><li>Badge</li></a><a href="#cover" onclick="goDoc('cover')"><li>Cover</li></a><a href="#menu" onclick="goDoc('menu')"><li>Menu</li></a><a href="#grid" onclick="goDoc('grid')"><li>Grid</li></a><a href="#swiper" onclick="goDoc('swiper')"><li>Swiper</li></a><a href="#page" onclick="goDoc('page')"><li>Page</li></a><a href="#include" onclick="goDoc('include')"><li>Include</li></a><a href="#popover" onclick="goDoc('popover')"><li>Popover</li></a><a href="#alert" onclick="goDoc('alert')"><li>Alert</li></a><a href="#loading" onclick="goDoc('loading')"><li>Loading</li></a><a href="#progress-circle" onclick="goDoc('progress-circle')"><li>Progress Circle</li></a><a href="#progress-semicircle" onclick="goDoc('progress-semicircle')"><li>Progress Semicircle</li></a><a href="#chart-bar" onclick="goDoc('chart-bar')"><li>Chart Bar</li></a><a href="#timeline" onclick="goDoc('timeline')"><li>Timeline</li></a><a href="#templates" onclick="goDoc('templates')"><li>Templates</li></a></ul><h1>Libs</h1><ul><a href="#mobileuijs" onclick="goDoc('mobileuijs')"><li>MobileUI.js</li></a><a href="#jquery" onclick="goDoc('jquery')"><li>jQuery</li></a><a href="#progressbarjs" onclick="goDoc('progressbarjs')"><li>ProgressBar.js</li></a></ul></div><div class="content-land font-raleway"><div class="content-doc-reader">
+    <div class="menuland font-raleway"><div class="list radius grey-50"><div class="item space-small icon ion-search" id="searchComponent"><input type="text" placeholder="Search..." autofocus="autofocus"></div></div><h1>Getting started</h1><ul><a href="#getting-started" onclick="goDoc('getting-started')"><li>Install</li></a><a href="#templates" onclick="goDoc('templates')"><li>Templates</li></a></ul><h1>Components base</h1><ul><a href="#base" onclick="goDoc('base')"><li>Base</li></a><a href="#colors" onclick="goDoc('colors')"><li>Colors</li></a><a href="#icons" onclick="goDoc('icons')"><li>Icons</li></a><a href="#fonts" onclick="goDoc('fonts')"><li>Fonts</li></a><a href="#header" onclick="goDoc('header')"><li>Header</li></a><a href="#button" onclick="goDoc('button')"><li>Button</li></a><a href="#input" onclick="goDoc('input')"><li>Input</li></a><a href="#list" onclick="goDoc('list')"><li>List</li></a><a href="#tab" onclick="goDoc('tab')"><li>Tab</li></a><a href="#card" onclick="goDoc('card')"><li>Card</li></a><a href="#badge" onclick="goDoc('badge')"><li>Badge</li></a><a href="#cover" onclick="goDoc('cover')"><li>Cover</li></a><a href="#menu" onclick="goDoc('menu')"><li>Menu</li></a><a href="#grid" onclick="goDoc('grid')"><li>Grid</li></a><a href="#swiper" onclick="goDoc('swiper')"><li>Swiper</li></a><a href="#page" onclick="goDoc('page')"><li>Page</li></a><a href="#include" onclick="goDoc('include')"><li>Include</li></a><a href="#popover" onclick="goDoc('popover')"><li>Popover</li></a><a href="#alert" onclick="goDoc('alert')"><li>Alert</li></a><a href="#loading" onclick="goDoc('loading')"><li>Loading</li></a><a href="#timeline" onclick="goDoc('timeline')"><li>Timeline</li></a></ul><h1>Components charts</h1><ul><a href="#progress-circle" onclick="goDoc('progress-circle')"><li>Progress Circle</li></a><a href="#progress-semicircle" onclick="goDoc('progress-semicircle')"><li>Progress Semicircle</li></a><a href="#chart-bar" onclick="goDoc('chart-bar')"><li>Chart Bar</li></a></ul><h1>Libs</h1><ul><a href="#mobileuijs" onclick="goDoc('mobileuijs')"><li>MobileUI.js</li></a><a href="#jquery" onclick="goDoc('jquery')"><li>jQuery</li></a><a href="#progressbarjs" onclick="goDoc('progressbarjs')"><li>ProgressBar.js</li></a><a href="#chartjs" onclick="goDoc('chartjs')"><li>Chart.js</li></a></ul></div><div class="content-land font-raleway"><div class="content-doc-reader">
     <h2 class="title-doc" id="getting-started">Getting started</h2>
     <p>
       MobileUI was created thinking of making your hybrid application <strong>faster</strong> and <strong>smaller</strong>, since you only install what you
       are really going to use for UI.
     </p>
     <p>
-      Certainly you will love using it in  <a href="https://developers.google.com/web/progressive-web-apps/" target="_blank">Progressive Web Apps</a>
+      Certainly, you will love using it in  <a href="https://developers.google.com/web/progressive-web-apps/" target="_blank">Progressive Web Apps</a>
       and <a href="https://cordova.apache.org/" target="_blank">Apache Cordova Apps</a>.
       You can use only the components you want in your projects created with <a href="http://phonegap.com/" target="_blank">PhoneGap</a>,
       <a href="http://ionicframework.com/" target="_blank">Ionic Framework</a>, <a href="https://onsen.io/" target="_blank">Onsen UI</a>,
@@ -88,37 +88,82 @@
       appearance of the app based on the platform.
     </p>
     <p>
-      The Installation is very simple, but first you need to install <a href="https://nodejs.org" target="_blank">Node.js</a>
+      The Installation is straightforward, but first, you need to install <a href="https://nodejs.org" target="_blank">Node.js</a>.
+      Then, install Cordova via terminal <strong>npm install -g cordova</strong>(add sudo if you are in Linux).      
     </p>
     <p>
-      After, just execute command in your terminal:
+      After that, just execute the command in your terminal:
     </p>
     <pre>npm install -g mobileui</pre>
-    <p>See this usage example for the header and list components.</p>
-    <pre>mobileui install header list</pre>
-    <p>MoboleUI has a feature to view your application directly in the browser and with livereload feature. To do this, type the command below.</p>
-    <pre>mobileui preview</pre>
-    <p>By default an HTTP server will run on port 8080, but you can change it by passing the <code>--port</code> parameter with the desired port, eg <code>--port 8000</code></p>
+    <p>To check if mobileui is installed or not, open the terminal and type <strong>mobileui</strong></p>
+    
+
+    <h4>Simple Example</h4>
+    
+    <p>Let's create a Simple Example using mobileui</p>
+    
+    <p>Open Terminal from desired location and following command is executed</p>
+    <p> Create a cordova Project using command - <strong>cordova create apptest</strong> </p>
+    <p> Change the directory to your project - <strong>cd apptest</strong> </p>
+    <p> For sample we can take <strong>header component</strong> as example, so install header component - <strong>mobileui install header</strong> </p>
+    <p> After that add the below code in index.html    
+      <pre>         
+              &lt;div class="header purple"&gt;
+              &lt;button class="left icon ion-navicon" name="button"&gt;&lt;/button&gt;
+              &lt;h1&gt;Application title&lt;/h1&gt;
+              &lt;/div&gt;          
+      </pre>        
+    </p>
+    <p> To preview this run: <strong>mobileui preview</strong> </p>
+    <p>By default, an HTTP server will run on port 8080, but you can change it by passing the <code>--port</code> parameter with the desired port, eg <code>--port 8000</code></p>
     <a href="https://github.com/MobileUI/components/tree/master/base/install.html" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>
+</div><div class="content-doc-reader">
+    <h2 class="title-doc" id="templates">Templates</h2>
+    <p>
+      To make application development faster and easier you can use some templates available through MobileUI.
+    </p>
+    <p>
+      To use a template you need to install with the command:
+    </p>
+    <pre>mobileui install template name-of-template</pre>
+    <p>
+      See list of template for this moment:
+    </p>
+    <div class="content-table">
+      <table class="tableDoc">
+        <tbody>
+          <tr>
+            <th>Template</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td><code>cordova-blank</code></td>
+            <td>Create a files base to app created in Apache Cordova.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <a href="https://github.com/MobileUI/components/tree/master/base/templates.html" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>
 </div><div class="content-doc-reader">
     <h2 class="title-doc" id="base">Base</h2>
     <p>
-      Base component contains the basic features to use MobileUI and any other component of this kit.
-      With this component you can use the <a href="#colors">color themes</a>, <a href="#icons">icons</a> and some classes of positioning and alignment of elements in the interface.
+      The base component contains the basic features to use MobileUI and any other component of this kit.
+      With this component, you can use the <a href="#colors">color themes</a>, <a href="#icons">icons</a> and some classes of positioning and alignment of elements in the interface.
     </p>
     <p>
       To use it you need to install with the command:
     </p>
     <pre>mobileui install base</pre>
-    <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr><tr><td><code>content </code></td><td>Create the scrollable viewport of your app.</td></tr><tr><td><code>left </code></td><td>Floats any element to the left.</td></tr><tr><td><code>right </code></td><td>Floats any element to the right.</td></tr><tr><td><code>top </code></td><td>Floats any element to the top.</td></tr><tr><td><code>bottom </code></td><td>Floats any element to the bottom.</td></tr><tr><td><code>align-left </code></td><td>Align text, icons, and elements to the left.</td></tr><tr><td><code>align-center </code></td><td>Align text, icons, and elements to the center.</td></tr><tr><td><code>align-right </code></td><td>Align text, icons, and elements to the right.</td></tr><tr><td><code>border </code></td><td>Add a small border in element.</td></tr><tr><td><code>hidden </code></td><td>Hide a element.</td></tr><tr><td><code>opacity-90 </code></td><td>Define 90% of opacity.</td></tr><tr><td><code>opacity-80 </code></td><td>Define 80% of opacity.</td></tr><tr><td><code>opacity-70 </code></td><td>Define 70% of opacity.</td></tr><tr><td><code>opacity-60 </code></td><td>Define 60% of opacity.</td></tr><tr><td><code>opacity-50 </code></td><td>Define 50% of opacity.</td></tr><tr><td><code>opacity-40 </code></td><td>Define 40% of opacity.</td></tr><tr><td><code>opacity-30 </code></td><td>Define 30% of opacity.</td></tr><tr><td><code>opacity-20 </code></td><td>Define 20% of opacity.</td></tr><tr><td><code>opacity-10 </code></td><td>Define 10% of opacity.</td></tr><tr><td><code>line </code></td><td>Create a horizontal line, you need define color using <code>base</code> colors.</td></tr><tr><td><code>padding </code></td><td>Add an internal space.</td></tr><tr><td><code>margin </code></td><td>Add an external space.</td></tr><tr><td><code>radius </code></td><td>Add a small rounded border.</td></tr><tr><td><code>radius-big </code></td><td>Add a large rounded border.</td></tr><tr><td><code>circle </code></td><td>Add a circular border.</td></tr><tr><td><code>radius-left </code></td><td>Adds a small border just to the left.</td></tr><tr><td><code>radius-right </code></td><td>Adds a small border just to the right.</td></tr><tr><td><code>radius-top </code></td><td>Adds a small border just to the top.</td></tr><tr><td><code>ellipsis </code></td><td>Limit the display of a text in only one line with periods at the end.</td></tr><tr><td><code>shadow </code></td><td>Create a shadow on an element (not text).</td></tr><tr><td><code>space </code></td><td>Add a space vertically.</td></tr><tr><td><code>space-big </code></td><td>Add a big space vertically.</td></tr><tr><td><code>space-huge </code></td><td>Add a huge space vertically.</td></tr><tr><td><code>margin-bottom </code></td><td>Add a margin on the bottom.</td></tr><tr><td><code>margin-top </code></td><td>Add a margin on the top.</td></tr><tr><td><code>text-shadow </code></td><td>Create a shadow in a text.</td></tr><tr><td><code>text-small </code></td><td>Leave the text and icons small.</td></tr><tr><td><code>text-big </code></td><td>Leave the text and icons large.</td></tr><tr><td><code>text-huge </code></td><td>Leave the text and icons huge.</td></tr><tr><td><code>text-light </code></td><td>Leave the text thinner.</td></tr><tr><td><code>text-bold </code></td><td>Leave a bold text.</td></tr><tr><td><code>text-strong </code></td><td>Leave the text thicker.</td></tr><tr><td><code>float-bottom-right </code></td><td>Floats an element in the footer to the right.</td></tr><tr><td><code>float-bottom-left </code></td><td>Floats an element in the footer to the left.</td></tr><tr><td><code>float-bottom-center </code></td><td>Floats an element in the footer to the left.</td></tr><tr><td><code>icon-circle </code></td><td>Create a completely round icon.</td></tr></table></div>
+    <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr><tr><td><code>content </code></td><td>Create the scrollable viewport of your app.</td></tr><tr><td><code>left </code></td><td>Floats any element to the left.</td></tr><tr><td><code>right </code></td><td>Floats any element to the right.</td></tr><tr><td><code>top </code></td><td>Floats any element to the top.</td></tr><tr><td><code>bottom </code></td><td>Floats any element to the bottom.</td></tr><tr><td><code>align-left </code></td><td>Align text, icons, and elements to the left.</td></tr><tr><td><code>align-center </code></td><td>Align text, icons, and elements to the center.</td></tr><tr><td><code>align-right </code></td><td>Align text, icons, and elements to the right.</td></tr><tr><td><code>border </code></td><td>Add a small border in element.</td></tr><tr><td><code>hidden </code></td><td>Hide a element.</td></tr><tr><td><code>opacity-90 </code></td><td>Define 90% of opacity.</td></tr><tr><td><code>opacity-80 </code></td><td>Define 80% of opacity.</td></tr><tr><td><code>opacity-70 </code></td><td>Define 70% of opacity.</td></tr><tr><td><code>opacity-60 </code></td><td>Define 60% of opacity.</td></tr><tr><td><code>opacity-50 </code></td><td>Define 50% of opacity.</td></tr><tr><td><code>opacity-40 </code></td><td>Define 40% of opacity.</td></tr><tr><td><code>opacity-30 </code></td><td>Define 30% of opacity.</td></tr><tr><td><code>opacity-20 </code></td><td>Define 20% of opacity.</td></tr><tr><td><code>opacity-10 </code></td><td>Define 10% of opacity.</td></tr><tr><td><code>line </code></td><td>Create a horizontal line, you need define color using <code>base</code> colors.</td></tr><tr><td><code>padding </code></td><td>Add an internal space.</td></tr><tr><td><code>margin </code></td><td>Add an external space.</td></tr><tr><td><code>radius </code></td><td>Add a small rounded border.</td></tr><tr><td><code>radius-big </code></td><td>Add a large rounded border.</td></tr><tr><td><code>circle </code></td><td>Add a circular border.</td></tr><tr><td><code>radius-left </code></td><td>Adds a small border just to the left.</td></tr><tr><td><code>radius-right </code></td><td>Adds a small border just to the right.</td></tr><tr><td><code>radius-top </code></td><td>Adds a small border just to the top.</td></tr><tr><td><code>ellipsis </code></td><td>Limit the display of a text in only one line with periods at the end.</td></tr><tr><td><code>shadow </code></td><td>Create a shadow on an element (not text).</td></tr><tr><td><code>space </code></td><td>Add a space vertically.</td></tr><tr><td><code>space-big </code></td><td>Add a big space vertically.</td></tr><tr><td><code>space-huge </code></td><td>Add a huge space vertically.</td></tr><tr><td><code>margin-bottom </code></td><td>Add a margin on the bottom.</td></tr><tr><td><code>margin-top </code></td><td>Add a margin on the top.</td></tr><tr><td><code>text-shadow </code></td><td>Create a shadow in a text.</td></tr><tr><td><code>text-small </code></td><td>Leave the text small.</td></tr><tr><td><code>icon-small </code></td><td>Leave the icon small.</td></tr><tr><td><code>icon-big </code></td><td>Leave the icon big.</td></tr><tr><td><code>icon-huge </code></td><td>Leave the icon huge.</td></tr><tr><td><code>icon-extra-huge </code></td><td>Leave the icon extra-huge.</td></tr><tr><td><code>text-big </code></td><td>Leave the text large.</td></tr><tr><td><code>text-extra-huge </code></td><td>Leave the text extra-huge.</td></tr><tr><td><code>text-huge </code></td><td>Leave the text huge.</td></tr><tr><td><code>text-light </code></td><td>Leave the text thinner.</td></tr><tr><td><code>text-bold </code></td><td>Leave a bold text.</td></tr><tr><td><code>text-strong </code></td><td>Leave the text thicker.</td></tr><tr><td><code>float-bottom-right </code></td><td>Floats an element in the footer to the right.</td></tr><tr><td><code>float-bottom-left </code></td><td>Floats an element in the footer to the left.</td></tr><tr><td><code>float-bottom-center </code></td><td>Floats an element in the footer to the left.</td></tr><tr><td><code>icon-circle </code></td><td>Create a completely round icon.</td></tr></table></div>
     <a href="https://github.com/MobileUI/components/tree/master/base/base.html" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>
 </div><div class="content-doc-reader">
     <h2 class="title-doc" id="colors">Colors</h2>
-    <p>MobileUI use the suggestions material design colors because material takes cues from contemporary architecture, road signs, pavement marking tape, and athletic courts. Color should be unexpected and vibrant.</p>
+    <p>MobileUI uses the suggestions material design colors because material takes cues from contemporary architecture, road signs, pavement marking tape, and athletic courts. Color should be unexpected and vibrant.</p>
     <p>This color palette comprises primary and accent colors that can be used for illustration or to develop your brand colors. They’ve been designed to work harmoniously with each other. The color palette starts with primary colors and fills in the spectrum to create a complete and usable palette for Android, Web, and iOS.</p>
     <p>Themes enable consistent app styling through surface shades, shadow depth, and ink opacity.</p>
     <p>
-      The themes colors is in base MobileUI, to use it install base through command:
+      The theme's colors are in base MobileUI, to use it install base through the command:
     </p>
     <pre>mobileui install base</pre>
     <p>And just add the class in your component to use the color, example:  </p>
@@ -493,14 +538,14 @@
 </div><div class="content-doc-reader">
     <h2 class="title-doc" id="icons">Icons</h2>
     <p>
-      MobileUI also comes with its own free and open-sourced icon font, <a href="http://ionicons.com/" target="_blank">Ionicons</a>, with over 500 icons to choose from.
+      MobileUI also comes with its own free and open-source icon font, <a href="http://ionicons.com/" target="_blank">Ionicons</a>, with over 500 icons to choose from.
     </p>
     <p>
-      The icons is in base MobileUI, for use just install base the command:
+      The icons are in base MobileUI, for use just install base the command:
     </p>
     <pre>mobileui install base</pre>
     <p>
-      And add <code>icon</code> and the Ionicon classname for the icon to show, which can be easily looked up on the <a href="http://ionicons.com/" target="_blank">Ionicons</a> homepage. You can change the color add class colors for text.
+      And add <code>icon</code> and the Ionicon class name for the icon to show, which can be easily looked up on the <a href="http://ionicons.com/" target="_blank">Ionicons</a> homepage. You can change the color add class colors for text.
     </p>
     <textarea class="bind-code" mode="text/html" custom-class="result-icon">
 <i class="icon ion-navicon"></i>
@@ -540,7 +585,7 @@
 </div><div class="content-doc-reader">
     <h2 class="title-doc" id="fonts">Fonts</h2>
     <p>
-      One of MobileUI's primary concerns is UX Design, so we offer a simple way to install new fonts in your web apps.
+      One of MobileUI's primary concerns is UX Design, so we offer a easy way to install new fonts in your web apps.
     </p>
     <p>
       You can install any source in the <a href="https://fonts.google.com" target="_blank">Google Fonts</a> repository.
@@ -565,7 +610,7 @@
       Headers are fixed regions at the top of a screen that can contain a title label, and left/right buttons for navigation or to carry out various actions.
     </p>
     <p>
-      For use this components you need install with command:
+      To use this component you need install with the command:
     </p>
     <div class="dependency tooltip">
       <strong>Dependency:</strong> <code>base</code> and <code>button</code>.
@@ -719,7 +764,7 @@
     </div>
     <div class="footer sub green-800">
     <div class="title">
-       All itens is ready!
+       All items are ready!
     </div>
   </div>
   <p>Content here.</p>
@@ -731,9 +776,9 @@
       You can use <a href="#colors">colors theme</a> and <a href="#icons">icons</a> in button. If you need use base mode just add theme color name,
       you can alter border color using class <code>border-[COLOR]</code>, alter text color using class <code>text-[COLOR]</code> and add radius border using class <code>radius</code>.
     </p>
-    <p>For use icon in button you need add class <code>icon-text</code> and you can use diferents size, see the examples below.</p>
+    <p>For use icon in button you need add class <code>icon-text</code> and you can use diferent size, see the examples below.</p>
     <p>
-      For use this components you need install with command:
+      To use this component you need install with the command:
     </p>
     <div class="dependency tooltip">
       <strong>Dependency:</strong> <code>base</code>.
@@ -758,9 +803,9 @@
 <p>Social login:</p>
 <button class="blue icon-text">
   <i class="icon ion-social-facebook"></i>
-  Login width Facebook
+  Login with Facebook
 </button>
-<p>Diferent sizes:</p>
+<p>Different sizes:</p>
 <button class="red icon-text big">
   <i class="icon ion-trash-b"></i>
   Delete
@@ -776,7 +821,7 @@
   <button class="teal-700 border-teal-700">Middle</button>
   <button class="teal border-teal-700 radius-right">Right</button>
 </div>
-<p>And diferent size in group:</p>
+<p>And different size in group:</p>
 <div class="buttons-group full small">
   <button class="red border-red-600 radius-left">Left</button>
   <button class="red border-red-600">Middle</button>
@@ -797,7 +842,7 @@
       Inputs are essential in an application to collect user data, so we need to worry about the layout and MobileUI does it for you.
     </p>
     <p>
-      For use this components you need install with command:
+      To use this component you need install with the command:
     </p>
     <div class="dependency tooltip">
       <strong>Dependency:</strong> <code>base</code> and <code>list</code>.
@@ -962,7 +1007,7 @@
     </div>
   </div>
   <div class="item grey-200 text-grey text-light">
-    <p>Show new of the app on your Hone Screen.</p>
+    <p>Show new of the app on your Home Screen.</p>
   </div>
   <div class="item">
     <h2>Auto Backup</h2>
@@ -971,7 +1016,7 @@
     </div>
   </div>
   <div class="item grey-200 text-grey text-light">
-    <p>Allow backup of the app in background when you not used.</p>
+    <p>Allow backup of the app in the background when you not used.</p>
   </div>
   <div class="item">
     <h2>Allow Remove App</h2>
@@ -1129,14 +1174,14 @@
 </div><div class="content-doc-reader">
     <h2 class="title-doc" id="list">List</h2>
     <p>
-    For use this components you need install with command:
+      To use this component you need install with the command:
     </p>
     <div class="dependency tooltip">
     <strong>Dependency:</strong> <code>base</code>.
     <span class="tooltiptext">The dependencies will be installed together with this module</span>
     </div>
     <pre>mobileui install list</pre>
-    <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr><tr><td><code>list </code></td><td>Define an element as list. This feature depends on the <code>item</code> to function properly.</td></tr><tr><td><code>item </code></td><td>Define an element as item. This feature depends on the <code>list</code> to function properly.</td></tr><tr><td><code>space-small </code></td><td>Define a small space between the top and bottom elements.</td></tr><tr><td><code>no-space-top </code></td><td>Remove space in top item.</td></tr><tr><td><code>no-space-bottom </code></td><td>Remove space in bottom item.</td></tr><tr><td><code>no-border </code></td><td>Define that a list or an item has no borders.</td></tr><tr><td><code>border-bottom </code></td><td>Define that a list or an item has a bottom border.</td></tr><tr><td><code>full </code></td><td>Define an item without internal spaces.</td></tr><tr><td><code>avatar </code></td><td>Set a fixed size for an image.</td></tr><tr><td><code>avatar-badge </code></td><td>Set a floating badge above the image.</td></tr><tr><td><code>border-big </code></td><td>Add big border in item or element.</td></tr></table></div>
+    <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr><tr><td><code>list </code></td><td>Define an element as list. This feature depends on the <code>item</code> to function properly.</td></tr><tr><td><code>item </code></td><td>Define an element as item. This feature depends on the <code>list</code> to function properly.</td></tr><tr><td><code>space-small </code></td><td>Define a small space between the top and bottom elements.</td></tr><tr><td><code>block </code></td><td>Block line space with left avatar.</td></tr><tr><td><code>no-space-top </code></td><td>Remove space in top item.</td></tr><tr><td><code>no-space-bottom </code></td><td>Remove space in bottom item.</td></tr><tr><td><code>no-border </code></td><td>Define that a list or an item has no borders.</td></tr><tr><td><code>border-bottom </code></td><td>Define that a list or an item has a bottom border.</td></tr><tr><td><code>full </code></td><td>Define an item without internal spaces.</td></tr><tr><td><code>avatar </code></td><td>Set a fixed size for an image.</td></tr><tr><td><code>avatar-badge </code></td><td>Set a floating badge above the image.</td></tr><tr><td><code>border-big </code></td><td>Add big border in item or element.</td></tr></table></div>
     <p>You can use all features the <a href="#base">base</a> MobileUI in this component.</p>
 
 <textarea class="bind-code" mode="text/html">
@@ -1159,7 +1204,7 @@
   </div>
 </div></textarea>
     <p>
-      You can put images and icones in list.
+      You can put images and icons in list.
     </p>
 <textarea class="bind-code" mode="text/html">
 <div class="list">
@@ -1207,7 +1252,7 @@
 <textarea class="bind-code" mode="text/html" replace="body,div">
 <body class="padding grey-100">
   <h1 class="text-bold">List of contacts</h1>
-  <p>List of your contacts save in this deivce.</p>
+  <p>List of your contacts saved in this device.</p>
   <div class="list radius white">
     <div class="item">
       <div class="left">
@@ -1354,7 +1399,7 @@
     <span class="tooltiptext">The dependencies will be installed together with this module</span>
   </div>
   <p>
-    For use this components you need install with command:
+    To use this component you need install with the command:
   </p>
   <pre>mobileui install tab</pre>
   <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr><tr><td><code>tab </code></td><td>Define a new tab.</td></tr><tr><td><code>tab-content </code></td><td>Define a area content by tab</td></tr><tr><td><code>active </code></td><td>Define that tab and ab-content is open.</td></tr><tr><td><code>badge </code></td><td>Create a badge in tab.</td></tr></table></div>
@@ -1666,14 +1711,14 @@
       its container without losing its proportions. You can also place additional content, like text or image,
       on top of the image.</p>
       <p>
-        For use this components you need install with command:
+        To use this component you need install with the command:
       </p>
       <div class="dependency tooltip">
         <strong>Dependency:</strong> <code>base</code>.
         <span class="tooltiptext">The dependencies will be installed together with this module</span>
       </div>
       <pre>mobileui install cover</pre>
-      <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr><tr><td><code>cover </code></td><td>Define that an element has a <code>background-image</code> and must cover the space required.</td></tr><tr><td><code>no-padding </code></td><td>Remove space inner the cover.</td></tr><tr><td><code>avatar </code></td><td>Limit the size of an image and add large border.</td></tr><tr><td><code>float-bottom-left </code></td><td>Float an element in the footer on the left.</td></tr><tr><td><code>float-bottom-right </code></td><td>Float an element in the footer on the right.</td></tr><tr><td><code>float-bottom-center </code></td><td>Float an element in the footer on the center.</td></tr><tr><td><code>gradient </code></td><td>Set a gradient effect from black to transparent in the background of an element.</td></tr><tr><td><code>blend-multiply </code></td><td>Used when a <code>background-image</code> is set to apply the multiply effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-multiply">multiply blend mode</a></td></tr><tr><td><code>blend-screen </code></td><td>Used when a <code>background-image</code> is set to apply the screen effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-screen">screen blend mode</a></td></tr><tr><td><code>blend-overlay </code></td><td>Used when a <code>background-image</code> is set to apply the overlay effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-overlay">overlay blend mode</a></td></tr><tr><td><code>blend-darken </code></td><td>Used when a <code>background-image</code> is set to apply the darken effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-darken">darken blend mode</a></td></tr><tr><td><code>blend-lighten </code></td><td>Used when a <code>background-image</code> is set to apply the lighten effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-lighten">lighten blend mode</a></td></tr><tr><td><code>blend-color-dodge </code></td><td>Used when a <code>background-image</code> is set to apply the color-dodge effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-color-dodge">color-dodge blend mode</a></td></tr><tr><td><code>blend-color-burn </code></td><td>Used when a <code>background-image</code> is set to apply the color-burn effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-color-burn">color-burn blend mode</a></td></tr><tr><td><code>blend-hard-light </code></td><td>Used when a <code>background-image</code> is set to apply the hard-light effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-hard-light">hard-light blend mode</a></td></tr><tr><td><code>blend-soft-light </code></td><td>Used when a <code>background-image</code> is set to apply the soft-light effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-soft-light">soft-light blend mode</a></td></tr><tr><td><code>blend-luminosity </code></td><td>Used when a <code>background-image</code> is set to apply the luminosity effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-luminosity">luminosity blend mode</a></td></tr></table></div>
+      <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr><tr><td><code>cover </code></td><td>Define that an element has a <code>background-image</code> and must cover the space required.</td></tr><tr><td><code>cover-200 </code></td><td>Fixed height size.</td></tr><tr><td><code>cover-200 </code></td><td>Fixed height size.</td></tr><tr><td><code>cover-400 </code></td><td>Fixed height size.</td></tr><tr><td><code>cover-500 </code></td><td>Fixed height size.</td></tr><tr><td><code>no-padding </code></td><td>Remove space inner the cover.</td></tr><tr><td><code>avatar </code></td><td>Limit the size of an image and add large border.</td></tr><tr><td><code>float-bottom-left </code></td><td>Float an element in the footer on the left.</td></tr><tr><td><code>float-bottom-right </code></td><td>Float an element in the footer on the right.</td></tr><tr><td><code>float-bottom-center </code></td><td>Float an element in the footer on the center.</td></tr><tr><td><code>gradient </code></td><td>Set a gradient effect from black to transparent in the background of an element.</td></tr><tr><td><code>blend-multiply </code></td><td>Used when a <code>background-image</code> is set to apply the multiply effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-multiply">multiply blend mode</a></td></tr><tr><td><code>blend-screen </code></td><td>Used when a <code>background-image</code> is set to apply the screen effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-screen">screen blend mode</a></td></tr><tr><td><code>blend-overlay </code></td><td>Used when a <code>background-image</code> is set to apply the overlay effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-overlay">overlay blend mode</a></td></tr><tr><td><code>blend-darken </code></td><td>Used when a <code>background-image</code> is set to apply the darken effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-darken">darken blend mode</a></td></tr><tr><td><code>blend-lighten </code></td><td>Used when a <code>background-image</code> is set to apply the lighten effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-lighten">lighten blend mode</a></td></tr><tr><td><code>blend-color-dodge </code></td><td>Used when a <code>background-image</code> is set to apply the color-dodge effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-color-dodge">color-dodge blend mode</a></td></tr><tr><td><code>blend-color-burn </code></td><td>Used when a <code>background-image</code> is set to apply the color-burn effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-color-burn">color-burn blend mode</a></td></tr><tr><td><code>blend-hard-light </code></td><td>Used when a <code>background-image</code> is set to apply the hard-light effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-hard-light">hard-light blend mode</a></td></tr><tr><td><code>blend-soft-light </code></td><td>Used when a <code>background-image</code> is set to apply the soft-light effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-soft-light">soft-light blend mode</a></td></tr><tr><td><code>blend-luminosity </code></td><td>Used when a <code>background-image</code> is set to apply the luminosity effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-luminosity">luminosity blend mode</a></td></tr></table></div>
       <p>You can use all features the <a href="#base">base</a> MobileUI in this component.</p>
 <textarea class="bind-code" mode="text/html">
 <div class="cover align-center" style="background-image:url(/img/aurora-boreal-rosa.jpg)">
@@ -1834,7 +1879,7 @@
       Menu adapts to the appropriate style based on the platform.
     </p>
     <p>
-      For use this component you need install with command:
+      To use this component you need install with the command:
     </p>
     <div class="dependency tooltip">
       <strong>Dependency:</strong> <code>base</code> and <code>list</code>.
@@ -2004,7 +2049,7 @@
     </div>
   </div>
 </body></textarea>
-    <p>For advanced mode you can listener the event <code>openMenu</code> and <code>closeMenu</code>.</p>
+    <p>For advanced mode you can listen to the event <code>openMenu</code> and <code>closeMenu</code>.</p>
 <textarea class="bind-just-code" mode="text/javascript">
 document.addEventListener('openMenu', function(e){
   //It does something when the menu is opened
@@ -2018,17 +2063,17 @@ document.addEventListener('closeMenu', function(e){
     <a href="https://github.com/MobileUI/components/tree/master/menu/index.html" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>
 </div><div class="content-doc-reader">
   <h2 class="title-doc" id="grid">Grid</h2>
-  <p>MobileUI use <a href="https://www.w3.org/TR/css-flexbox-1/" target="_blank">CSS Flexible Box Layout Module</a> standard.</p>
+  <p>MobileUI uses <a href="https://www.w3.org/TR/css-flexbox-1/" target="_blank">CSS Flexible Box Layout Module</a> standard.</p>
   <p>
     Simply add columns you want in a row, and they'll evenly take up the available space. If you want three columns, add three columns, if you want five columns, add five columns. There's no restriction to a 12 column grid, or having to explicitly state how
     large each column should be.
   </p>
   <p>
-    The <code>row</code> classname is used to designate, surprise, a row, and <code>col</code> is used for a column. In the demo to the right we chose to have four, then two, columns, but we could have just as easily used 3, 6, 7, 23, etc., it doesn't
+    The <code>row</code> class name is used to designate, surprise, a row, and <code>col</code> is used for a column. In the demo to the right we chose to have four, then two, columns, but we could have just as easily used 3, 6, 7, 23, etc., it doesn't
     matter. Point is, add the number of columns your layout requires and don't worry about figuring out the percentages because it figures it out automatically.
   </p>
   <p>
-    For use this components you need install with command:
+    To use this component you need install with the command:
   </p>
   <pre>mobileui install grid</pre>
   <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr><tr><td><code>row </code></td><td>Create a line.</td></tr><tr><td><code>row-between </code></td><td>Create a line that the columns are distributed in an equal space.</td></tr><tr><td><code>row-around </code></td><td>Create a line that the columns are distributed in an equal space around.</td></tr><tr><td><code>row-stretch </code></td><td>Create a stretch row, you need define height value.</td></tr><tr><td><code>column </code></td><td>Create a column.</td></tr><tr><td><code>wrap </code></td><td>Default all items will be on one line, whit this class add to row all items will wrap onto multiple lines, from top to bottom.</td></tr><tr><td><code>vertical-align-top </code></td><td>Align col to the top(Axis Y).</td></tr><tr><td><code>vertical-align-center </code></td><td>Align col to the center(Axis Y).</td></tr><tr><td><code>vertical-align-bottom </code></td><td>Align col to the bottom(Axis Y).</td></tr><tr><td><code>horizontal-align-left </code></td><td>Align col to the left(Axis X).</td></tr><tr><td><code>horizontal-align-center </code></td><td>Align col to the center(Axis X).</td></tr><tr><td><code>horizontal-align-right </code></td><td>Align col to the right(Axis X).</td></tr><tr><td><code>row-center </code></td><td>Center a column on the row.</td></tr><tr><td><code>col </code></td><td>Create a column with remaining space of the row.</td></tr><tr><td><code>col-10 </code></td><td>Create a column with 10% of the row.</td></tr><tr><td><code>col-20 </code></td><td>Create a column with 20% of the row.</td></tr><tr><td><code>col-25 </code></td><td>Create a column with 25% of the row.</td></tr><tr><td><code>col-34 </code></td><td>Create a column with 33.3333% of the row.</td></tr><tr><td><code>col-50 </code></td><td>Create a column with 50% of the row.</td></tr><tr><td><code>col-67 </code></td><td>Create a column with 66.6666% of the row.</td></tr><tr><td><code>col-75 </code></td><td>Create a column with 75% of the row.</td></tr><tr><td><code>col-80 </code></td><td>Create a column with 80% of the row.</td></tr><tr><td><code>col-90 </code></td><td>Create a column with 90% of the row.</td></tr></table></div>
@@ -2353,7 +2398,7 @@ document.addEventListener('closeMenu', function(e){
     There is a lot of combination and configuration for use with great elements in your sliders, for this see the <a href="http://idangero.us/swiper/api/" target="_blank">documentation</a> and <a href="http://idangero.us/swiper/demos" target="_blank">examples</a> to use Swiper.
   </p>
   <p>
-    For use this components you need install with command:
+    To use this component you need install with the command:
   </p>
   <pre>mobileui install swiper</pre>
   <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr><tr><td><code>swiper-container </code></td><td>Define a container of sliders.</td></tr><tr><td><code>swiper-wrapper </code></td><td>Define a wrapper of swiper.</td></tr><tr><td><code>swiper-slide </code></td><td>Define a element slide.</td></tr><tr><td><code>vertical-align-center </code></td><td>Align all elements in the center of vertical.</td></tr><tr><td><code>swiper-container-autoheight </code></td><td> Auto Height </td></tr><tr><td><code>swiper-notification </code></td><td> a11y </td></tr><tr><td><code>swiper-wp8-horizontal </code></td><td> Windows Phone 8 Fixes </td></tr><tr><td><code>swiper-button-next </code></td><td> Arrows </td></tr><tr><td><code>swiper-pagination </code></td><td> Pagination Styles </td></tr><tr><td><code>swiper-pagination-bullets </code></td><td> Common Styles </td></tr><tr><td><code>swiper-pagination-bullet </code></td><td> Bullets </td></tr><tr><td><code>swiper-pagination-white </code></td><td>Define a white bullet pagination.</td></tr><tr><td><code>swiper-pagination-black </code></td><td>Define a black bullet pagination.</td></tr><tr><td><code>swiper-pagination-progress </code></td><td> Progress </td></tr><tr><td><code>swiper-container-3d </code></td><td> 3D Container </td></tr><tr><td><code>swiper-scrollbar </code></td><td> Scrollbar </td></tr><tr><td><code>swiper-lazy-preloader </code></td><td> Preloader </td></tr></table></div>
@@ -2368,7 +2413,7 @@ document.addEventListener('closeMenu', function(e){
           <div class="swiper-slide vertical-align-center pink-400">
             <i class="icon ion-beer"></i>
             <h1>Hello Beer</h1>
-            <p>The easiest way to order beer from your favourite bar!</p>
+            <p>The easiest way to order beer from your favorite bar!</p>
           </div>
           <!-- Add slide 2 -->
           <div class="swiper-slide vertical-align-center green-600">
@@ -2551,10 +2596,10 @@ document.addEventListener('backPage', function(e){
 </div><div class="content-doc-reader">
   <h2 class="title-doc" id="include">Include</h2>
   <p>
-    This component include a external file HTML in your page.
+    This component include an external file HTML in your page.
   </p>
   <p>
-    For use this components you need install with command:
+    To use this component you need install with the command:
   </p>
   <pre>mobileui install include</pre>
   <!-- _DOC_GENERATE_CSS_DOC -->
@@ -2592,7 +2637,7 @@ document.addEventListener('backPage', function(e){
     <span class="tooltiptext">The dependencies will be installed together with this module</span>
   </div>
   <p>
-    For use this components you need install with command:
+    To use this component you need install with the command:
   </p>
   <pre>mobileui install popover</pre>
   <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr><tr><td><code>popover </code></td><td>Define a new popover.</td></tr></table></div>
@@ -2634,12 +2679,12 @@ document.addEventListener('backPage', function(e){
     <span class="tooltiptext">The dependencies will be installed together with this module</span>
   </div>
   <p>
-    For use this components you need install with command:
+    To use this component you need install with the command:
   </p>
   <pre>mobileui install alert</pre>
   <!-- _DOC_GENERATE_CSS_DOC -->
   <p>
-    For use you need call the function <code>alert('YOUR MESSAGE')</code> or <code>alert(objectCustomized)</code>, and you can send more paramters for create alert with title or multiple options.
+    To use, you need to call the function <code>alert('YOUR MESSAGE')</code> or <code>alert(objectCustomized)</code>, and you can send more paramters for create alert with title or multiple options.
   </p>
   <p>
     See this small example:
@@ -2710,7 +2755,7 @@ document.addEventListener('backPage', function(e){
     <span class="tooltiptext">The dependencies will be installed together with this module</span>
   </div>
   <p>
-    For use this components you need install with command:
+    To use this component you need install with the command:
   </p>
   <pre>mobileui install loading</pre>
   <!-- _DOC_GENERATE_CSS_DOC -->
@@ -2737,6 +2782,121 @@ document.addEventListener('backPage', function(e){
 </body></textarea>
   <a href="https://github.com/MobileUI/components/tree/master/loading/index.html" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>
 </div><div class="content-doc-reader">
+  <h2 class="title-doc" id="timeline">Timeline</h2>
+  <p>
+    To use this component you need install with the command:
+  </p>
+  <pre>mobileui install timeline</pre>
+  <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr><tr><td><code>timeline </code></td><td>Define a timeline component.</td></tr></table></div>
+<textarea class="bind-code" mode="text/html">
+<body class="has-header grey-100">
+  <div class="header cyan-300 text-white">
+    <div class="left">
+      <button class="icon ion-navicon-round"></button>
+    </div>
+    <div class="title text-center">
+      Wednesday
+    </div>
+    <div class="right">
+      <button class="icon ion-search"></button>
+    </div>
+  </div>
+  <div class="row cyan-300 space-between vertical-align-center" style="height: 100px">
+    <div class="col-10">
+      <button class="icon ion-chevron-left text-white"></button>
+    </div>
+    <div class="col align-center">
+      <span class="text-white text-huge">15</span>
+    </div>
+    <div class="col-10">
+      <button class="icon ion-chevron-right text-white"></button>
+    </div>
+  </div>
+  <div class="row vertical-align-center cyan text-white">
+    <div class="col-10">
+      <button class="icon ion-android-add-circle text-white"></button>
+    </div>
+    <div class="col align-center">
+      DECEMBER 2016
+    </div>
+    <div class="col-10">
+      <button class="icon ion-calendar text-white"></button>
+    </div>
+  </div>
+  <div class="timeline grey-100">
+    <div class="row">
+      <div class="col-10 align-center marker">
+        <div class="icon-circle-small text-white cyan-700">
+          <i class="icon ion-home"></i>
+        </div>
+      </div>
+      <div class="col shadow radius margin white" >
+        <div class="margin">
+          <h2><span class="text-bold">8:00</span> File preparation</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-10 align-center marker">
+        <div class="icon-circle-small text-white cyan-700">
+          <i class="icon ion-home"></i>
+        </div>
+      </div>
+      <div class="col shadow radius margin white">
+        <div class="margin">
+          <h2><span class="text-bold">10:00</span> Webshop mockups discussions</h2>
+          <p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit aliqua.</p>
+          <br />
+          <div class="row">
+            <div class="col-10">
+              <small class="text-grey-400">with:</small>
+            </div>
+            <div class="col">
+              <div class="row avatar-group">
+                <div class="avatar-photo circle">
+                  <img src="/img/33.jpg" width="30" alt="">
+                </div>
+                <div class="avatar-photo circle">
+                  <img src="/img/53.jpg" width="30" alt="">
+                </div>
+                <div class="avatar-photo circle">
+                  <img src="/img/65.jpg" width="30" alt="">
+                </div>
+                <div class="avatar-photo circle">
+                  <img src="/img/80.jpg" width="30" alt="">
+                </div>
+                <div class="avatar-photo circle">
+                  <img src="/img/33.jpg" width="30" alt="">
+                </div>
+                <div class="circle-more">
+                  <div class="">
+                    +3
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-10 align-center marker">
+        <div class="col icon-circle-small text-white cyan-700">
+          <i class="icon ion-home"></i>
+        </div>
+      </div>
+      <div class="col shadow radius margin white" >
+        <div class="margin">
+          <h2><span class="text-bold">10:00</span> Webshop mockups discussions</h2>
+          <p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit aliqua.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body></textarea>
+
+  <a href="https://github.com/MobileUI/components/tree/master/timeline/index.html" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>
+</div><div class="content-doc-reader">
   <h2 class="title-doc" id="progress-circle">Progress Circle</h2>
   <p>
     Progress circle is a simple component widely used to inform metrics about a given.
@@ -2747,7 +2907,7 @@ document.addEventListener('backPage', function(e){
     <span class="tooltiptext">The dependencies will be installed together with this module</span>
   </div>
   <p>
-    For use this components you need install with command:
+    To use this component you need install with the command:
   </p>
   <pre>mobileui install progress-circle</pre>
   <table class="tableDoc">
@@ -2959,7 +3119,7 @@ document.addEventListener('backPage', function(e){
     <span class="tooltiptext">The dependencies will be installed together with this module</span>
   </div>
   <p>
-    For use this components you need install with command:
+    To use this component you need install with the command:
   </p>
   <pre>mobileui install progress-semicircle</pre>
   <table class="tableDoc">
@@ -3098,7 +3258,7 @@ document.addEventListener('backPage', function(e){
     This component provides an efficient and customizable bar chart using the capabilities of the <code>base</code>.
   </p>
   <p>
-    For use this components you need install with command:
+    To use this component you need install with the command:
   </p>
   <div class="dependency tooltip">
     <strong>Dependency:</strong> <code>base</code>.
@@ -3243,155 +3403,12 @@ document.addEventListener('backPage', function(e){
 
   <a href="https://github.com/MobileUI/components/tree/master/chart-bar/index.html" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>
 </div><div class="content-doc-reader">
-  <h2 class="title-doc" id="timeline">Timeline</h2>
-  <p>
-    For use this components you need install with command:
-  </p>
-  <pre>mobileui install timeline</pre>
-  <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr><tr><td><code>timeline </code></td><td>Define a timeline component.</td></tr></table></div>
-<textarea class="bind-code" mode="text/html">
-<body class="has-header grey-100">
-  <div class="header cyan-300 text-white">
-    <div class="left">
-      <button class="icon ion-navicon-round"></button>
-    </div>
-    <div class="title text-center">
-      Wednesday
-    </div>
-    <div class="right">
-      <button class="icon ion-search"></button>
-    </div>
-  </div>
-  <div class="row cyan-300 space-between vertical-align-center" style="height: 100px">
-    <div class="col-10">
-      <button class="icon ion-chevron-left text-white"></button>
-    </div>
-    <div class="col align-center">
-      <span class="text-white text-huge">15</span>
-    </div>
-    <div class="col-10">
-      <button class="icon ion-chevron-right text-white"></button>
-    </div>
-  </div>
-  <div class="row vertical-align-center cyan text-white">
-    <div class="col-10">
-      <button class="icon ion-android-add-circle text-white"></button>
-    </div>
-    <div class="col align-center">
-      DECEMBER 2016
-    </div>
-    <div class="col-10">
-      <button class="icon ion-calendar text-white"></button>
-    </div>
-  </div>
-  <div class="timeline grey-100">
-    <div class="row">
-      <div class="col-10 align-center marker">
-        <div class="icon-circle-small text-white cyan-700">
-          <i class="icon ion-home"></i>
-        </div>
-      </div>
-      <div class="col shadow radius margin white" >
-        <div class="margin">
-          <h2><span class="text-bold">8:00</span> File preparation</h2>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-10 align-center marker">
-        <div class="icon-circle-small text-white cyan-700">
-          <i class="icon ion-home"></i>
-        </div>
-      </div>
-      <div class="col shadow radius margin white">
-        <div class="margin">
-          <h2><span class="text-bold">10:00</span> Webshop mockups discussions</h2>
-          <p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit aliqua.</p>
-          <br />
-          <div class="row">
-            <div class="col-10">
-              <small class="text-grey-400">with:</small>
-            </div>
-            <div class="col">
-              <div class="row avatar-group">
-                <div class="avatar-photo circle">
-                  <img src="/img/33.jpg" width="30" alt="">
-                </div>
-                <div class="avatar-photo circle">
-                  <img src="/img/53.jpg" width="30" alt="">
-                </div>
-                <div class="avatar-photo circle">
-                  <img src="/img/65.jpg" width="30" alt="">
-                </div>
-                <div class="avatar-photo circle">
-                  <img src="/img/80.jpg" width="30" alt="">
-                </div>
-                <div class="avatar-photo circle">
-                  <img src="/img/33.jpg" width="30" alt="">
-                </div>
-                <div class="circle-more">
-                  <div class="">
-                    +3
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-10 align-center marker">
-        <div class="col icon-circle-small text-white cyan-700">
-          <i class="icon ion-home"></i>
-        </div>
-      </div>
-      <div class="col shadow radius margin white" >
-        <div class="margin">
-          <h2><span class="text-bold">10:00</span> Webshop mockups discussions</h2>
-          <p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit aliqua.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</body></textarea>
-
-  <a href="https://github.com/MobileUI/components/tree/master/timeline/index.html" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>
-</div><div class="content-doc-reader">
-    <h2 class="title-doc" id="templates">Templates</h2>
-    <p>
-      To make application development faster and easier you can use some templates available through MobileUI.
-    </p>
-    <p>
-      To use a template you need to install with the command:
-    </p>
-    <pre>mobileui install template name-of-template</pre>
-    <p>
-      See list of template for this moment:
-    </p>
-    <div class="content-table">
-      <table class="tableDoc">
-        <tbody>
-          <tr>
-            <th>Template</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td><code>cordova-blank</code></td>
-            <td>Create a files base to app created in Apache Cordova.</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <a href="https://github.com/MobileUI/components/tree/master/base/templates.html" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>
-</div><div class="content-doc-reader">
     <h2 class="title-doc" id="mobileuijs">MobileUI.JS</h2>
     <p>
       This component is a simple library for manipulating data, states of elements and Ajax request in JavaScript.
     </p>
     <p>
-      For use this components you need install with command:
+      To use this component you need install with the command:
     </p>
     <pre>mobileui install mobileuijs</pre>
     <p>
@@ -3691,7 +3708,7 @@ var users = [
       If you use jQuery, you already know how to use Zepto.
     </p>
     <p>
-      For use this components you need install with command:
+      To use this component you need install with the command:
     </p>
     <pre>mobileui install jquery</pre>
     <p>See the Zepto documentation and its resources at <a href="http://zeptojs.com/" target="_blank">zeptojs.com</a>.</p>
@@ -3709,13 +3726,29 @@ var users = [
 
   </p>
   <p>
-    For use this components you need install with command:
+    To use this component you need install with the command:
   </p>
   <pre>mobileui install progressbarjs</pre>
   <p>
     MobileUI use this lib for create another components!
   </p>
   <a href="https://github.com/MobileUI/components/tree/master/progressbarjs/index.html" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>
+</div><div class="content-doc-reader">
+  <h2 class="title-doc" id="chartjs">Chart.js</h2>
+  <p>
+    Simple HTML5 Charts using the canvas element <a href="chartjs.org" target="_blank">chartjs.org</a>.
+  </p>
+  <p>
+
+  </p>
+  <p>
+    To use this component you need install with the command:
+  </p>
+  <pre>mobileui install chartjs</pre>
+  <p>
+    MobileUI use this lib for create another components!
+  </p>
+  <a href="https://github.com/MobileUI/components/tree/master/chartjs/index.html" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>
 </div></div>
 
     <script>
