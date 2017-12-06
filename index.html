@@ -2935,7 +2935,7 @@ document.addEventListener('backPage', function(e){
       <span class="tooltiptext">The dependencies will be installed together with this module</span>
     </div>
     <pre>mobileui install chartist</pre>
-    <!-- _DOC_GENERATE_CSS_DOC -->
+    <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr><tr><td><code>chartist-big </code></td><td>Set a big size for rows and bars..</td></tr><tr><td><code>chartist-white </code></td><td>Sets a color scheme for the chart.</td></tr><tr><td><code>chartist-red </code></td><td>Sets a color scheme for the chart.</td></tr><tr><td><code>chartist-pink </code></td><td>Sets a color scheme for the chart.</td></tr><tr><td><code>chartist-purple </code></td><td>Sets a color scheme for the chart.</td></tr><tr><td><code>chartist-deep-purple </code></td><td>Sets a color scheme for the chart.</td></tr><tr><td><code>chartist-indigo </code></td><td>Sets a color scheme for the chart.</td></tr><tr><td><code>chartist-blue </code></td><td>Sets a color scheme for the chart.</td></tr></table></div>
     <p>You can use all features the <a href="#base">base</a> MobileUI in this component.</p>
 
 <textarea class="bind-code"  header-absolute="true" mode="text/html" border="true">
@@ -2974,6 +2974,120 @@ document.addEventListener('backPage', function(e){
   });
 
 </script></textarea>
+  <p>Your can use the primary scheme colors and combination with others components. Next example use <code>header</code>, <code>grid</code> and <code>list</code>.</p>
+<textarea class="bind-code"  header-absolute="true" mode="text/html" border="true">
+  <div class="header blue-grey-800">
+    <button class="left icon ion-navicon"></button>
+    <h1>Strauss Coffe Roasters</h1>
+  </div>
+  <div class="header sub blue-grey-900 align-center">
+    <button class="left icon ion-ios-arrow-left text-blue"></button>
+    <h1 class="text-blue">July 20, 2017</h1>
+    <button class="right icon ion-ios-arrow-right text-blue"></button>
+  </div>
+  <div class="content has-header has-sub-header padding">
+    
+    <p class="text-blue text-big">Sales Summary</p>
+    
+    <div class="row">
+      <div class="col-25">
+        <h1 class="text-strong text-big">$1,854.86</h1>
+        <p>Gross Sales</p>
+      </div>
+      <div class="col align-center">
+        <h1 class="text-strong text-big">341</h1>
+        <p>Sales</p>
+      </div>
+      <div class="col-25">
+        <h1 class="text-strong text-big">$5.44</h1>
+        <p>Average Sale</p>
+      </div>
+    </div>
+
+    <div class="chartist-blue chartist-big" id="chartist-strauss"></div>
+
+    <div class="list">
+      <div class="item">
+        <h2>Hot Drinks</h2>
+        <span class="right text-strong">$762.00</span>
+      </div>
+      <div class="item">
+        <h2>Cold Drinks</h2>
+        <span class="right text-strong">$634.25</span>
+      </div>
+      <div class="item">
+        <h2>Pastries</h2>
+        <span class="right text-strong">$188.00</span>
+      </div>
+      <div class="item">
+        <h2>Merchandise</h2>
+        <span class="right text-strong">$126.76</span>
+      </div>
+    </div>
+
+  </div>
+  <script type="text/javascript">
+    
+    new Chartist.Bar('#chartist-strauss', {
+      labels: ['6AM', '7AM', '8AM', '9AM', '10AM', '11AM', '12PM', '1PM'],
+      series: [
+        [56, 160, 220, 350, 210, 180, 320, 310]
+      ]
+    }, {
+      axisY: {
+        offset: 30,
+        labelInterpolationFnc: function(value) {
+          return '
+
+    <script>
+      ((window.gitter = {}).chat = {}).options = {
+        room: 'MobileUI/geral'
+      };
+    </script>
+    <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.2/mode/javascript/javascript.min.js"></script>
+    <script type="text/javascript" src="mobileui/base.min.js"></script>
+    <script type="text/javascript" src="mobileui/button.min.js"></script>
+    <script type="text/javascript" src="mobileui/menu.min.js"></script>
+    <script type="text/javascript" src="mobileui/input.min.js"></script>
+    <script type="text/javascript" src="mobileui/page.min.js"></script>
+    <script type="text/javascript" src="mobileui/tab.min.js"></script>
+    <script type="text/javascript" src="mobileui/mobileuijs.min.js"></script>
+    <script type="text/javascript" src="mobileui/popover.min.js"></script>
+    <script type="text/javascript" src="mobileui/alert.min.js"></script>
+    <script type="text/javascript" src="mobileui/loading.min.js"></script>
+    <script type="text/javascript" src="mobileui/include.min.js"></script>
+    <script type="text/javascript" src="mobileui/swiper.min.js"></script>
+    <script type="text/javascript" src="mobileui/chartjs.min.js"></script>
+    <script type="text/javascript" src="mobileui/mobileui-colors.min.js"></script>
+    <script type="text/javascript" src="mobileui/progressbarjs.min.js"></script>
+    <script type="text/javascript" src="mobileui/progress-circle.min.js"></script>
+    <script type="text/javascript" src="mobileui/progress-semicircle.min.js"></script>
+    <script type="text/javascript" src="mobileui/chartist.min.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/contact.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-100441135-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>
+ + value
+        }
+      }
+    });
+  
+  </script></textarea>
 
 
     <a href="https://github.com/MobileUI/components/tree/master/chartist/index.html" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>
