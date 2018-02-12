@@ -2555,6 +2555,9 @@ document.addEventListener('closeMenu', function(e){
       The operation of this component is very simple, to open a new page just call the function <code>openPage('NAME_FILE_HTML')</code> and to go
       back just call the function <code>backPage()</code>.
     </p>
+    <p>
+      If you need disabled BackButton in your device, just define <code>window.disabledBackButton=true</code>.
+    </p>
 <textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div|grey-200,grey-200 body" height-preview="400px" border="true" multiplatform="true">
 <body class="padding grey-200 has-header">
   <div class="header blue">
@@ -2778,6 +2781,62 @@ document.addEventListener('backPage', function(e){
       }
     </script>
   </body></textarea>
+  <p>Another option like modal component you can add <code>list</code> and <code>input</code> by <code>template</code>  with more advanced customized alert:</p>
+<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div|padding,padding body" height-preview="600px" border="true" multiplatform="true">
+<body class="padding">
+  <button class="purple full radius margin-bottom" onclick="alertForm()">Finish process</button>
+
+  <div class="hidden" id="template-alert-custom">
+    <div class="list">
+      <div class="item">
+        <input type="text" placeholder="Add an comment about process..." autofocus>
+      </div>
+      <div class="item">
+        <label>
+          <div class="left">
+              <input type="radio" name="user" class="purple">
+          </div>
+          <h2>The process was well executed</h2>
+        </label>
+      </div>
+      <div class="item">
+        <label>
+          <div class="left">
+            <input type="radio" name="user" class="purple">
+          </div>
+          <h2>The process was run in error</h2>
+        </label>
+      </div>
+      <div class="item">
+        <label>
+          <div class="left">
+            <input type="radio" name="user" class="purple">
+          </div>
+          <h2>The process was not executed</h2>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function alertForm(){
+      alert({
+        title:'Finish process',
+        message:'Fill in the options to finalize the process',
+        template: 'template-alert-custom',
+        width:'90%',
+        buttons:[
+          {
+            label: 'Finish'
+          },
+          {
+            label:'Cancel'
+          }
+        ]
+      });
+    }
+  </script>
+</body></textarea>
   <a href="https://github.com/MobileUI/components/tree/master/alert/index.html" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>
 </div><div class="content-doc-reader">
   <h2 class="title-doc" id="loading">Loading</h2>
