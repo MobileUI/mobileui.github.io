@@ -95,6 +95,14 @@
         <button class="border-blue text-blue radius small" onclick="openSource('menu-page')">Source Code</button>
         <div class="line margin-bottom"></div>
     </div>
+    
+    <div class="item-demo">
+        <h1 class="text-strong">Database SQLite</h1>
+        <p>Simple operations with SQLite.</p>
+        <button class="border-blue blue radius small" onclick="runDemo('database-sqlite')">Run demo</button>
+        <button class="border-blue text-blue radius small" onclick="openSource('database-sqlite')">Source Code</button>
+        <div class="line margin-bottom"></div>
+    </div>
     </div>
 
     
@@ -115,13 +123,14 @@
 
 
         function openSource(key) {
-            var win = window.open('https://github.com/MobileUI/demos/'+key+'/www', '_blank')
+            var win = window.open('https://github.com/MobileUI/demos/tree/master/'+key+'/www', '_blank')
             win.focus()
         }
 
         function runDemo(key) {
             document.querySelector('.myFrame').style.display="block"
-            document.getElementById('frameDemo').src = location.origin + "/demos/tree/master/" + key + "/www/index.html"
+            document.getElementById('frameDemo').src = location.origin + "/demos/" + key + "/www/index.html"
+            
         }
     </script>
   </body>
