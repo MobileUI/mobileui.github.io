@@ -174,6 +174,18 @@ mobileui preview
             <td><code>cordova-blank</code></td>
             <td>Create a files base to app created in Apache Cordova.</td>
           </tr>
+          <tr>
+            <td><code>cordova-angular1</code></td>
+            <td>Create a scaffold project using AngularJS</td>
+          </tr>
+          <tr>
+            <td><code>cordova-phaser</code></td>
+            <td>Create a scaffold project using Phaser.</td>
+          </tr>
+          <tr>
+            <td><code>cordova-vuejs</code></td>
+            <td>Create a scaffold project using VueJS.</td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -2731,6 +2743,12 @@ document.addEventListener('backPage', function(e){
     </div>
   </div>
 </body></textarea>
+<p>If you need make bind some event after popover open just listener event:</p>
+<textarea class="bind-just-code" mode="text/javascript">
+document.addEventListener('popoverOpened', function(e){
+  //TODO
+})
+</textarea>
 
   <a href="https://github.com/MobileUI/components/tree/master/popover/index.html" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>
 </div><div class="content-doc-reader">
@@ -2875,6 +2893,12 @@ document.addEventListener('backPage', function(e){
     }
   </script>
 </body></textarea>
+<p>If you need make bind in inputs into a <code>alert</code> just listener event:</p>
+<textarea class="bind-just-code" mode="text/javascript">
+document.addEventListener('alertOpened', function(e){
+  //TODO
+})
+  </textarea>
   <a href="https://github.com/MobileUI/components/tree/master/alert/index.html" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>
 </div><div class="content-doc-reader">
   <h2 class="title-doc" id="loading">Loading</h2>
